@@ -1,0 +1,1928 @@
+.menu
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 55
+	margin: 0
+	padding: 35px 0
+	@include trans
+	.container
+		overflow: visible
+	&__row
+		align-items: center
+	a
+		color: #fff
+	&__logo
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+	&__trigger
+		margin-right: 10px
+		cursor: pointer
+		width: 20px
+		height: 20px
+		position: relative
+		div
+			width: 22px
+			background: #fff
+			height: 1px
+			margin-bottom: 10px
+			position: absolute
+			@include trans
+			&:last-child
+				margin: 0
+				bottom: 5px
+			&:first-child
+				top: 5px
+				width: 15px
+		&:hover
+			div
+				&:first-child
+					width: 22px
+
+	&__left
+		align-items: center
+		a
+			margin-left: 26px
+			text-transform: uppercase
+			font-size: 13px
+			&:hover
+				opacity: .6
+	&__right
+		align-items: center
+		gap: 32px
+		a
+			height: 24px
+			&:hover
+				opacity: .6
+	&__city
+		color: #fff
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		gap: 5px
+		font-size: 13px
+		cursor: pointer
+	.cart
+		display: flex
+		align-items: center
+		gap: 5px
+		span
+			width: 20px
+			height: 20px
+			background: #fff
+			border-radius: 50px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 12px
+			color: #000
+.menu.scroll1
+	padding: 23px 0
+
+.menu.scroll, .menu.active
+	background: #fff
+	@include trans
+	border-bottom: 1px solid rgba(0,0,0,.1)
+
+	a
+		color: #000
+	.menu__right
+		svg
+			path
+				stroke: #000
+			circle
+				stroke: #000
+		.cart
+			rect
+				stroke: #000
+			path
+				fill: #000
+				stroke: none
+			span
+				background: #000
+				color: #fff
+	.menu__city
+		color: #000
+	.menu__logo
+		svg
+			path
+				fill: #000
+	.menu__trigger
+		div
+			background: #000
+.menu.active
+	.menu__trigger
+		div
+			&:first-child
+				width: 22px
+
+.header
+	overflow: hidden
+	position: relative
+	height: 100vh
+	.swiper-slide
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.swiper-container-header
+		height: 100%
+	.swiper-wrapper
+		height: 100%!important
+	&__prev
+		position: absolute
+		left: 24px
+		top: 50%
+		z-index: 2
+		transform: translateY(-50%)
+		cursor: pointer
+		&:hover
+			svg
+				circle
+					fill-opacity: 0.18
+					@include trans
+	&__next
+		position: absolute
+		right: 24px
+		top: 50%
+		z-index: 2
+		transform: translateY(-50%)
+		cursor: pointer
+		&:hover
+			svg
+				circle
+					fill-opacity: 0.18
+					@include trans
+	&__pag
+		position: absolute
+		bottom: 20px!important
+		z-index: 2
+		top: auto!important
+	.swiper-pagination-progressbar .swiper-pagination-progressbar-fill
+		background: #fff
+	.swiper-pagination-progressbar
+		background: rgba(255, 255, 255, .4)
+		width: calc(100% - 82px)
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 26px!important
+	.header__pag
+		display: flex
+		gap: 10px
+	.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+		width: 100%
+		border-radius: 0px!important
+		background: rgba(255, 255, 255, 0.40)
+		height: 2px
+	.swiper-pagination-bullet-active
+		opacity: 1!important
+		background: #fff!important
+.collections
+	background: #E3E3E3
+	position: relative
+	margin-bottom: 150px
+	&__left
+		width: 50%
+		position: relative
+		z-index: 2
+		display: flex
+		border-right: 1px solid #fff
+		padding-top: 30px
+		img
+			object-fit: contain
+			margin-left: auto
+			transition: all 1s ease
+		&:hover
+			img
+				transform: scale(1.03)
+				transition: all 1s ease
+	&__text
+		margin-top: auto
+		margin-bottom: 30px
+		h3
+			font-size: 20px
+			font-weight: 400
+			margin-bottom: 10px
+			text-transform: uppercase
+		p
+			color: rgba(0,0,0,.3)
+			text-transform: uppercase
+			margin: 0
+	&__right
+		width: 50%
+		position: relative
+		display: flex
+		padding-top: 30px
+		z-index: 2
+		.collections__text
+			margin-left: auto
+			text-align: right
+		img
+			transition: all 1s ease
+		&:hover
+			img
+				transform: scale(1.03)
+				transition: all 1s ease
+	&__back
+		position: absolute
+		z-index: 0
+		left: 50%
+		transform: translateX(-50%)
+		top: 60px
+		width: 90%
+		svg
+			width: 100%
+			height: auto
+.footer
+	background: #f5f5f5
+
+	&__col
+		width: 25%
+		li
+			text-transform: uppercase
+			font-size: 14px
+			margin-bottom: 23px
+			&:first-child
+				margin-bottom: 33px
+			&:last-child
+				margin-top: 70px
+				margin-bottom: 0
+			a
+				color: rgba(0,0,0,.5)
+				&:hover
+					color: #000
+	.container
+		padding: 0 50px
+	&__svg
+		margin-top: 50px
+		width: 100%
+		display: flex
+		svg
+			width: 100%
+			height: auto
+	&__last
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 25%
+		li
+			font-size: 14px
+			text-transform: uppercase
+			color: rgba(0,0,0,.5)
+			margin: 0
+	&__top
+		padding: 44px 0
+		border-bottom: 1px solid #E5E5E5
+		margin-bottom: 40px
+		align-items: center
+		&__left
+			font-size: 14px
+			font-style: normal
+			font-weight: 400
+			text-transform: uppercase
+			width: 45%
+			max-width: 458px
+		&__right
+			margin-left: auto
+			display: flex
+			input
+				border: none
+				background: #fff
+				padding: 14px 446px 14px 16px
+				font-size: 14px
+				text-transform: uppercase
+				border: 2px solid transparent
+				&:placeholder
+					opacity: 0.5
+				&:focus-within
+					border: 2px solid #000
+			button
+				background: #212121
+				font-size: 12px
+				font-style: normal
+				font-weight: 500
+				color: #fff
+				text-transform: uppercase
+				padding: 16px 24px
+				margin-left: 12px
+				&:hover
+					background: rgba(0,0,0,.7)
+.tech
+	position: relative
+	.container
+		overflow: visible
+	&__left
+		position: absolute
+		height: 325px
+		width: 545px
+		img, video
+			height: 325px
+			width: 100%
+			object-fit: cover
+	.js-img-94
+		position: absolute
+	&__right
+		margin-left: 40%
+	&__title
+		font-size: 128px
+		text-transform: uppercase
+		@include trans
+		opacity: .1
+	&__text
+		margin-top: 0
+		line-height: 32px
+		font-size: 24px
+		display: none
+		// opacity: 0
+		// transform: translateY(100px)
+		// @include trans
+	&__item.active .tech__text
+		opacity: .5
+		display: block
+		transform: none
+		transform: translateY(0px)
+	&__item.active .tech__title
+		opacity: 1
+	&__item
+		padding-bottom: 48px
+		margin-bottom: 48px
+		border-bottom: 1px solid #E5E5E5
+		cursor: pointer
+.new-items
+	&__title
+		width: 100%
+		text-align: center
+		margin-bottom: 58px
+		font-size: 48px
+		font-style: normal
+		font-weight: 400
+		text-transform: uppercase
+		svg
+			width: 90%
+			height: auto
+	h2
+		font-size: 128px
+		font-style: normal
+		font-weight: 400
+		text-align: center
+		letter-spacing: 51.2px
+		text-transform: uppercase
+	&__selectors
+		.swiper-wrapper
+			justify-content: center
+			gap: 24px
+			margin-bottom: 48px
+		a
+			font-size: 14px
+			font-style: normal
+			font-weight: 400
+			width: auto
+			text-transform: uppercase
+			&:hover
+				opacity: .5
+	&__item
+		width: 25%
+		position: relative
+		text-align: center
+		&:not(:last-child)
+			border-right: 1px solid #fff
+		img, video
+			width: 100%
+			height: 100%
+			object-fit: cover
+		img
+			&:last-child
+				display: none
+		p
+			margin-bottom: 20px
+			font-size: 14px
+			text-transform: uppercase
+		.price
+			margin-bottom: 20px
+			font-size: 14px
+			font-weight: 500
+		.label
+			position: absolute
+			background: #fff
+			font-size: 10px
+			font-style: normal
+			font-weight: 400
+			text-transform: uppercase
+			padding: 4px 6px
+			top: 16px
+			left: 18px
+			z-index: 3
+	&__colors
+		justify-content: center
+		gap: 20px
+		div
+			width: 10px
+			height: 10px
+			border-radius: 40px
+		.red
+			background: #C92E2B
+		.black
+			background: #000
+		.grey
+			background: #95989D
+		.cyan
+			background: #6595A8
+		.pink
+			background: #EDC2C9
+
+	&__img
+		position: relative
+		@include trans
+		margin-bottom: 20px
+		width: 100%
+		height: 70vh
+		img
+			@include trans
+			position: absolute
+			top: 0
+			left: 0
+	.img-hover
+		opacity: 0
+	&__img:hover .addToCart
+		opacity: 1
+		@include trans
+		pointer-events: all
+	&__img:hover
+		.img-main
+			opacity: 0
+			@include trans
+		.img-hover
+			opacity: 1
+			@include trans
+.addToCart
+	cursor: pointer
+	position: absolute
+	background: #000
+	padding: 16px 12px
+	font-size: 14px
+	font-style: normal
+	font-weight: 500
+	text-transform: uppercase
+	text-align: center
+	bottom: 12px
+	left: 50%
+	transform: translateX(-50%)
+	width: calc(100% - 24px)
+	color: #fff
+	opacity: 0
+	pointer-events: none
+	@include trans
+	&:hover
+		background: #282828
+.hood
+	padding: 125px 0
+	background: #000
+	color: #fff
+	margin-bottom: 120px
+	&__left
+		max-width: 700px
+	&__selector
+		margin-bottom: 32px
+		text-transform: uppercase
+		font-size: 64px
+		font-style: normal
+		font-weight: 400
+		opacity: .2
+		@include trans
+		cursor: pointer
+		&:hover
+			opacity: 1
+			@include trans
+	&__descr
+		margin-top: 149px
+		text-transform: uppercase
+		font-size: 24px
+		font-style: normal
+		font-weight: 400
+.live
+	img
+		width: 100%
+	&__title
+		width: 100%
+		transform: translateX(70%)
+		svg
+			width: 100%
+			height: auto
+	&__col1
+		width: 25%
+		max-width: 328px
+	&__col3
+		width: 25%
+		margin-right: auto
+		max-width: 380px
+	&__col2
+		width: 40%
+		margin: 0 auto
+		max-width: 605px
+		margin-top: 50px
+	&__wrapper
+		gap: 150px
+		a
+			img
+				margin-bottom: 25px
+			p
+				text-transform: uppercase
+				margin-bottom: 10px
+
+			span
+				opacity: .4
+				text-transform: uppercase
+				font-size: 14px
+	.live__link1
+		margin-top: -50px
+		margin-bottom: 180px
+	.live__link2
+		margin-top: 170px
+		margin-bottom: 250px
+	.live-btn
+		font-size: 20px
+		font-style: normal
+		font-weight: 400
+		text-transform: uppercase
+		background: #F5F5F5
+		width: 358px
+		height: 113px
+		display: flex
+		align-items: center
+		justify-content: center
+		gap: 8px
+		&:hover
+			background: #000
+			color: #fff
+			svg
+				path
+					stroke: #fff
+.catalog
+	overflow: hidden
+	padding-top: 50px
+	&__col1
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+	&__row
+		a
+			display: flex
+			justify-content: center
+			flex-direction: column
+			&:first-child
+				border-right: 1px solid #fff
+			&:hover
+				img
+					transform: scale(1.03)
+					transition: all 1s ease
+		p
+			background: #fff
+			text-transform: uppercase
+			text-align: center
+			padding: 25px 0 50px
+			font-size: 20px
+	&__img
+		height: 750px
+		text-align: center
+		overflow: hidden
+		background: #e3e3e3
+		display: flex
+		justify-content: center
+		img
+			object-fit: cover
+			width: 100%
+			transition: all 1s ease
+			margin-top: auto
+	&__col2
+		margin-bottom: 50px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+		a
+			padding: 0
+		p
+			font-size: 24px
+			margin-bottom: 0
+			padding-bottom: 8px
+		span
+			text-transform: uppercase
+			font-size: 14px
+			display: block
+			text-align: center
+	&__col3
+		display: grid
+		grid-template-columns: 1fr 2fr
+	&__col4
+		display: grid
+		grid-template-columns: 2fr 1fr
+.catalog-header
+	height: 480px
+	background-size: cover!important
+	display: flex
+	align-items: center
+	justify-content: center
+	text-transform: uppercase
+	color: #fff
+	flex-direction: column
+	width: 100%
+	background-position: center center
+	margin-top: 70px
+	span
+		display: block
+		font-size: 14px
+		font-style: normal
+		font-weight: 500
+		line-height: normal
+		letter-spacing: 5.6px
+		margin-bottom: 8px
+		text-transform: uppercase
+	h1
+		margin: 0
+		font-size: 24px
+		font-style: normal
+		font-weight: 700
+		line-height: normal
+		letter-spacing: 7.2px
+		text-transform: uppercase
+		color: #fff
+.catalog-items
+	.new-items__selectors
+		align-items: center
+		width: auto
+		text-transform: uppercase
+		font-size: 14px
+		align-items: center
+		justify-content: flex-start
+		margin-bottom: 40px
+		.swiper-wrapper
+			width: auto
+			margin: 0
+	.filters
+		margin-right: auto
+		cursor: pointer
+		gap: 5px
+		align-items: center
+		.filters__trigger
+			display: flex
+			flex-direction: column
+			gap: 5px
+			div
+				height: 1px
+				background: #000
+				width: 10px
+				&:last-child
+					width: 6px
+					margin-left: auto
+					@include trans
+		&:hover
+			opacity: .5
+			.filters__trigger
+				div
+					&:last-child
+						width: 10px
+	.sort
+		margin-left: auto
+		cursor: pointer
+		align-items: center
+		gap: 5px
+		svg
+			transform: rotate(180deg)
+		&:hover
+			opacity: .5
+	.new-items__tab
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-gap: 40px 0
+	.new-items__item
+		width: 100%
+	.new-items__slider
+		overflow: hidden
+		position: relative
+		height: 70vh
+		img
+			width: 100%
+			object-fit: cover
+			display: block!important
+			height: 100%
+		.swiper-wrapper
+			height: 70vh!important
+		.header__pag
+			position: absolute
+			bottom: 20px!important
+			z-index: 2
+			top: auto!important
+			width: calc(100% - 48px)
+			left: 50%!important
+			transform: translateX(-50%)
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill
+	background: #fff
+.swiper-pagination-progressbar
+	background: rgba(255, 255, 255, .4)
+	width: calc(100% - 82px)
+	left: 50%
+	transform: translateX(-50%)
+	bottom: 26px!important
+.header__pag
+	display: flex
+	gap: 10px
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+	width: 100%
+	border-radius: 0px!important
+	background: rgba(255, 255, 255, 0.40)
+	height: 2px
+.swiper-pagination-bullet-active
+	opacity: 1!important
+	background: #fff!important
+.container2
+	width: 100%
+	max-width: 946px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	height: 100%
+.live-header
+	height: 680px
+	p
+		font-size: 20px
+		font-style: normal
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 20px
+		margin-top: auto
+		text-align: left
+	h1
+		font-size: 64px
+		font-style: normal
+		font-weight: 400
+		line-height: normal
+		text-transform: uppercase
+		margin-bottom: 40px
+		letter-spacing: 1px
+.live-container
+	margin-top: 120px
+	text-align: center
+	.container
+		max-width: 1430px
+	h1
+		text-transform: uppercase
+		margin-bottom: 40px
+		font-size: 48px
+		font-style: normal
+		font-weight: 400
+		letter-spacing: 1.92px
+		text-transform: uppercase
+	a
+		text-align: left
+		p
+			text-transform: uppercase
+			margin: 24px 0 12px
+		img
+			width: 100%
+			object-fit: cover
+		span
+			opacity: .4
+			text-transform: uppercase
+	&__col
+		margin-bottom: 120px
+		&:nth-child(odd)
+			a
+				&:first-child
+					width: 40%
+					max-width: 680px
+					p
+						font-size: 32px
+						font-style: normal
+						font-weight: 400
+					img
+						height: 800px
+					span
+						font-size: 20px
+				&:last-child
+					margin-left: auto
+					width: 30%
+					max-width: 460px
+					img
+						height: 540px
+					p
+						font-size: 24px
+						font-style: normal
+						font-weight: 400
+					span
+						font-size: 16px
+		&:nth-child(even)
+			a
+				&:last-child
+					width: 40%
+					max-width: 680px
+					img
+						height: 800px
+					span
+						font-size: 20px
+					p
+						font-size: 32px
+						font-style: normal
+						font-weight: 400
+				&:first-child
+					margin-right: auto
+					width: 30%
+					max-width: 460px
+					img
+						height: 540px
+
+					p
+						font-size: 24px
+						font-style: normal
+						font-weight: 400
+					span
+						font-size: 16px
+.article
+	overflow: hidden
+	h2
+		font-size: 32px
+		font-weight: 400
+		margin-bottom: 60px
+	p
+		font-size: 20px
+		margin-bottom: 24px
+	.article__row
+		margin: 56px 0 80px
+		gap: 24px
+		img
+			height: 560px
+			object-fit: cover
+	.article__row1
+		img, video
+			width: 100%
+		a
+			width: 100%
+
+	.new-items__item
+		width: 100%
+		img
+			height: 100%
+			margin-bottom: 20px
+	&__list
+		font-size: 20px
+		padding: 0
+		margin-bottom: 48px
+		li
+			display: flex
+			align-items: center
+			gap: 24px
+			font-size: 20px
+			position: relative
+			margin-bottom: 16px
+			span
+				width: 48px
+				height: 48px
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 100px
+				border: 1px solid #000
+	.swiper-container-article
+		margin-bottom: 60px
+		.swiper-slide
+			width: 461px
+			height: 400px
+			background: #F5F5F5
+			padding: 32px
+		svg
+			margin-bottom: 32px
+		span
+			display: block
+			font-size: 24px
+			margin-bottom: 24px
+		p
+			font-size: 20px
+			color: #888888
+	&__citate
+		margin-bottom: 24px
+		padding: 32px 0
+		border-top: 1px solid rgba(0,0,0,.1)
+		border-bottom: 1px solid rgba(0,0,0,.1)
+		p
+			font-size: 32px
+			margin-bottom: 16px
+	.article__citate__descr
+		font-size: 24px
+		color: #888888
+	&__link
+		margin-bottom: 100px
+		text-decoration: underline
+		font-size: 16px
+.contacts
+	margin-top: 140px
+	.container
+		display: flex
+	&__left
+		width: 45%
+
+		.tel
+			font-size: 64px
+			margin-bottom: 24px
+		.link
+			font-size: 32px
+			margin-bottom: 24px
+		a
+			width: fit-content
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				bottom: -5px
+				left: 0
+				background: #000
+				height: 2px
+				width: 0
+				transition: all .8s ease
+			&:hover
+				&:before
+					transition: all .8s ease
+					width: 100%
+
+	&__right
+		width: 50%
+		margin-top: 96px
+	h1
+		font-weight: 400
+		font-size: 48px
+		margin-bottom: 40px
+	&__req
+		margin-top: 50px
+	.descr
+		font-size: 20px
+		color: rgba(0,0,0,.5)
+		display: block
+		margin-bottom: 32px
+	.swiper-container-contact
+		overflow: hidden
+		margin-bottom: 32px
+		position: relative
+		img
+			width: 100%
+	&__text
+		font-size: 32px
+	&__address
+		padding-bottom: 50px
+		margin-bottom: 50px
+		&:not(:last-child)
+			border-bottom: 1px solid rgba(0,0,0,.08)
+		p
+			font-size: 20px
+			margin-top: 32px
+		a
+			&:hover
+				opacity: .5
+	.header__pag
+		position: absolute
+		bottom: 20px!important
+		z-index: 2
+		top: auto!important
+		width: calc(100% - 48px)
+		left: 50%!important
+		transform: translateX(-50%)
+.product
+	gap: 130px
+	margin-top: 70px
+	.container
+		position: relative
+	&__left
+		position: relative
+		width: 50%
+		img, video
+			height: 130vh
+			object-fit: cover
+			width: 100%
+			border-bottom: 1px solid #fff
+	&__right
+		padding-top: 80px
+		width: 40%
+		max-width: 480px
+		position: sticky
+		top: 0
+		height: fit-content
+		h1
+			text-transform: uppercase
+			font-size: 32px
+			font-weight: 400
+			margin-bottom: 20px
+			width: 75%
+	&__tags
+		gap: 4px
+		margin-bottom: 40px
+		&__item
+			background: #F5F5F5
+			text-transform: uppercase
+			font-size: 11px
+			padding: 6px 8px
+	&__title
+		justify-content: space-between
+
+	&__price
+		font-size: 32px
+		text-transform: uppercase
+		margin-bottom: 40px
+		&__old
+			opacity: .3
+			margin-left: 16px
+			text-decoration: line-through
+	&__pay
+		cursor: pointer
+		.label
+			display: flex
+		&__active
+			width: 100%
+			margin-bottom: 40px
+			padding: 12px
+			border-radius: 8px
+			border: 1px solid #C7C9CC
+			text-transform: uppercase
+			gap: 10px
+			align-items: center
+			display: flex
+			font-size: 13px
+			.arrow
+				margin-left: auto
+	&__name
+		font-size: 14px
+		font-style: normal
+		font-weight: 400
+		opacity: .5
+		text-transform: uppercase
+		margin-bottom: 20px
+	&__color
+		margin-bottom: 40px
+		ul
+			display: flex
+			gap: 12px
+		li
+			display: flex
+			height: 24px
+			width: 24px
+		label
+			display: flex
+			border-radius: 100px
+			cursor: pointer
+			position: relative
+			align-items: center
+			justify-content: center
+			width: 24px
+			height: 24px
+			input
+				position: absolute
+				left: -100%
+				opacity: 0
+				z-index: -11
+		.color
+			@include trans
+		.red
+			border: 1px solid #C92E2B
+			.color
+				background: #C92E2B
+		.grey
+			border: 1px solid #909090
+			.color
+				background: #909090
+		.black
+			border: 1px solid #000
+			.color
+				background: #000
+		.color
+			width: 24px
+			height: 24px
+			border-radius: 100px
+			background: #000
+		label.active
+			width: 26px
+			height: 26px
+			.color
+				transform: scale(.7)
+	&__size
+		margin-bottom: 40px
+		ul
+			display: flex
+			gap: 4px
+		label
+			padding: 10px 20px
+			font-size: 14px
+			border: 1px solid rgba(0, 0, 0, 0.08)
+		label.active
+			border: 1px solid rgba(0, 0, 0, 1)
+
+	&__prefs
+		display: grid
+		grid-template-columns: repeat(4, 1fr )
+		grid-gap: 8px
+		margin-bottom: 40px
+		&__item
+			padding: 12px 8px
+			font-size: 10px
+			text-transform: uppercase
+			background: #F5F5F5
+			display: flex
+			flex-direction: column
+		svg
+			margin-bottom: 16px
+			height: 24px
+	&__info
+		&__show
+			justify-content: space-between
+			align-items: center
+			text-transform: uppercase
+			font-size: 14px
+			display: flex
+			cursor: pointer
+			padding: 18px 0
+			border-top: 1px solid rgba(0,0,0,.1)
+			&:hover
+				svg, span
+					opacity: .5
+.select-radio, .select-check
+	label
+		cursor: pointer
+		display: flex
+		position: relative
+		input
+			position: absolute
+			left: -100%
+			opacity: 0
+			z-index: -11
+.btn-prod
+	background: #000
+	color: #fff
+	font-size: 14px
+	text-transform: uppercase
+	display: flex
+	justify-content: center
+	padding: 20px 24px
+	width: 100%
+	margin-bottom: 40px
+	@include trans
+	span
+		&:last-child
+			margin-left: auto
+	&:hover
+		background: rgba(0,0,0,.8)
+
+.megamenu
+	position: relative
+	z-index: 10
+	margin-top: 42px
+	width: 100%
+	height: auto
+	background: #fff
+	padding: 42px 0
+	display: none
+	overflow: auto
+	max-height: 90vh
+	border-top: 1px solid rgba(0,0,0,.2)
+	.container
+		display: grid
+		overflow: auto
+		grid-template-columns: repeat(4, 1fr)
+
+	.new-items__item
+		width: 250px
+	.new-items__img
+		margin: 0 auto 20px
+		width: 250px
+		height: 320px
+	&__col
+		li
+			margin-bottom: 20px
+			a
+				font-size: 24px
+				width: fit-content
+
+				&:hover
+					opacity: .5
+	&__col2
+		li
+			a
+				opacity: .5
+				width: fit-content
+				&:hover
+					opacity: 1
+.menu.active
+	border-bottom: 1px solid rgba(0,0,0,.1)
+	z-index: 11
+	.menu__trigger
+		width: 24px
+		height: 24px
+		position: relative
+		div
+			position: absolute
+			top: 50%
+			&:first-child
+				transform: rotate(45deg) translateY(-50%)
+			&:last-child
+				transform: rotate(-45deg) translateY(-50%)
+.menu.scroll
+	background: #fff
+	.megamenu
+		margin-top: 28px
+.tech-mob
+	display: none
+.footer__top
+	.last
+		display: none
+.product-mob
+	display: none
+	img, video
+		height: 80vh
+		min-height: 500px
+.left-sidebar
+	position: fixed
+	right: 0
+	width: 100%
+	height: 100vh
+
+	display: flex
+
+	overflow: hidden
+	opacity: 0
+	pointer-events: none
+	z-index: -12
+
+	.back
+		position: absolute
+		z-index: 0
+		background: rgba(0, 0, 0, 0.50)
+		backdrop-filter: blur(2.5px)
+		-moz-backdrop-filter: blur(2.5px)
+		-webkit-backdrop-filter: blur(2.5px)
+		width: 100%
+		height: 100%
+		cursor: pointer
+		opacity: 0
+
+	&__wrapper
+		width: 500px
+		background: #fff
+		margin-left: 24px
+		padding: 40px
+		transform: translateX(100%)
+		@include trans
+		z-index: 2
+		height: 100vh
+		overflow-y: auto
+		display: flex
+		flex-direction: column
+	.close
+		border-radius: 100px
+		background: #fff
+		width: 52px
+		height: 52px
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-left: auto
+		margin-top: 34px
+		cursor: pointer
+		z-index: 3
+		@include trans
+		&:hover
+			transform: scale(1.02)
+			@include trans
+	&__title
+		font-size: 24px
+		font-style: normal
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 40px
+	&__infoblock
+		font-size: 14px
+		text-transform: uppercase
+		margin-bottom: 40px
+		span
+			margin-bottom: 20px
+			display: block
+			opacity: .5
+	&__table
+		text-transform: uppercase
+		font-size: 14px
+		border-spacing: 20px
+		border-collapse: collapse
+		width: 100%
+		&:not(:last-child)
+			margin-bottom: 40px
+		.name
+			opacity: .5
+		tr
+			border-bottom: 1px solid rgba(0,0,0,.1)
+			padding: 20px 0
+			display: flex
+			justify-content: space-between
+			gap: 10px
+			&:last-child
+				border: none
+				padding-bottom: 0
+		td
+			&:nth-child(2)
+				text-align: right
+.left-sidebar.active
+	display: flex
+	z-index: 9
+	pointer-events: all
+	opacity: 1
+	overflow-y: auto
+	.left-sidebar__wrapper
+		transform: translateX(0)
+		@include trans
+	.back
+		opacity: 1
+.cart-sidebar
+	.cart-sidebar__container
+		display: flex
+		padding: 40px
+		flex-direction: column
+	.left-sidebar__wrapper
+		padding: 0
+	.left-sidebar__title
+		span
+			opacity: .5
+	&__items
+		text-transform: uppercase
+		font-size: 14px
+		padding-bottom: 40px
+		&:not(:last-child)
+			border-bottom: 1px solid rgba(0,0,0,.1)
+			margin-bottom: 40px
+		img
+			width: 100px
+			height: 150px
+			flex-shrink: 0
+			margin-right: 20px
+		&__title
+			display: flex
+			justify-content: space-between
+			gap: 10px
+			width: 100%
+			margin-bottom: 16px
+			p
+				width: 60%
+		&__info
+			display: flex
+			gap: 8px
+			margin-bottom: 16px
+			span
+				opacity: .5
+		&__bottom
+			display: flex
+			justify-content: space-between
+			gap: 10px
+			width: 100%
+			.delete
+				margin-left: auto
+				display: flex
+			.number
+				display: flex
+				width: 24px
+				height: 24px
+				padding: 4px
+				justify-content: center
+				align-items: center
+				background: #F5F5F5
+			.quantity
+				border: none
+				width: 35px
+				text-align: center
+	.price
+		margin-left: auto
+		font-weight: 500
+		width: 35%
+		text-align: right
+	&__bottom
+		margin-top: auto
+		background: #F5F5F5
+		padding: 40px
+		text-transform: uppercase
+		font-size: 14px
+		&__total
+			margin-bottom: 24px
+			span
+				opacity: .5
+	.btn-prod
+		margin-bottom: 24px
+	.product__pay__active
+		margin: 0
+	.btn-prod
+		&:hover
+			color: #fff
+.cart-sidebar.empty
+	.left-sidebar__wrapper
+		display: flex
+		flex-direction: column
+		p
+			margin: auto auto
+			text-align: center
+			opacity: .5
+			font-size: 14px
+			text-transform: uppercase
+	.btn-prod
+		margin: 0
+	.cart-sidebar__bottom
+		margin-top: auto
+	.cart-sidebar__container
+		display: flex
+		flex-direction: column
+		height: 100%
+.filters-sidebar
+	.clear
+		text-align: center
+		opacity: .5
+		&:hover
+			opacity: 1
+	.product__collection
+		ul
+			flex-wrap: wrap
+	.filters-sidebar__color
+		display: grid
+		grid-template-columns: 1fr 1fr
+		margin-bottom: 40px
+		grid-gap: 16px
+		.product__name
+			grid-column-start: 1
+			grid-column-end: 3
+		label
+			text-transform: uppercase
+			font-size: 14px
+			display: flex
+			gap: 8px
+		span
+			opacity: .5
+		.product__name
+			margin-bottom: 0
+		.filters-color
+			width: 16px
+			height: 16px
+			border-radius: 100px
+			background: #000
+		.filters-color.white
+			background: #fff
+			border: 1px solid #000
+		.filters-color.green
+			background: #008000
+		.filters-color.purple
+			background: #7F688E
+		.filters-color.black
+			background: #000
+.select-check
+	position: relative
+	label
+		position: relative
+		padding-left: 30px
+		&::after
+			content: ''
+			background: #EEEEF0
+			width: 18px
+			height: 18px
+			position: absolute
+			top: 0
+			left: 0
+.select-check.active
+	label
+		&::after
+			background: url('../files/controls.svg') no-repeat center
+			background-size: contain
+.carts
+	margin-top: 160px
+	h1
+		text-align: center
+		font-size: 40px
+		text-transform: uppercase
+		font-weight: 400
+		margin-bottom: 60px
+	&__total
+		width: 380px
+		padding: 32px 40px 20px 40px
+		background: #F5F5F5
+		&__title
+			font-size: 20px
+			font-style: normal
+			font-weight: 500
+			margin-bottom: 24px
+		&__row
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 12px
+			&:last-child
+				margin-bottom: 0px
+			span
+				font-size: 14px
+				&:first-child
+					opacity: .5
+				&:last-child
+					font-weight: 500
+		&__bottom
+			padding-top: 20px
+			margin-top: 20px
+			border-top: 1px solid #fff
+		&__price
+			justify-content: space-between
+			align-items: flex-end
+			margin-bottom: 20px
+			span
+				&:first-child
+					font-size: 14px
+				&:last-child
+					font-size: 24px
+					font-style: normal
+					font-weight: 500
+	.total-btn
+		background: #000
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding: 14px 20px
+		font-size: 14px
+		font-weight: 500
+		&:hover
+			background: rgba(0,0,0,.8)
+	.promo
+		border: 1px dashed rgba(0, 0, 0, 0.20)
+		padding: 11px 12px 13px 16px
+		align-items: center
+		margin-bottom: 24px
+		button
+			width: 24px
+			height: 24px
+			flex-shrink: 0
+			display: flex
+			padding: 0
+		input
+			font-size: 12px
+			font-style: normal
+			font-weight: 400
+			padding: 0
+			line-height: 16px
+			letter-spacing: 1.2px
+			border: none
+			background: none
+			text-transform: uppercase
+			width: 100%
+			&::placeholder
+				opacity: .5
+		&:focus-within
+			border: 1px dashed rgba(0, 0, 0, 1)
+	label
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__cart
+		display: flex
+		gap: 80px
+	&__right
+		margin-left: auto
+		position: sticky
+		top: 100px
+		right: 0
+		height: fit-content
+	&__left
+		width: 700px
+	&__wrapper
+		max-width: 1165px
+		margin: 0 auto
+	&__name
+		font-size: 24px
+		font-style: normal
+		font-weight: 500
+		display: flex
+		gap: 25px
+		margin-bottom: 40px
+		margin-left: -50px
+		span
+			opacity: .5
+	&__inputs
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-gap: 40px 20px
+		input
+			border: none
+			border-bottom: 1px solid rgba(0,0,0,.2)
+			width: 100%
+			padding-bottom: 12px
+			&:focus-within
+				border-bottom: 1px solid rgba(0,0,0,1)
+	&__col
+		margin-bottom: 80px
+	&__row
+		margin-bottom: 40px
+		&__title
+			color: rgba(0, 0, 0, 0.50)
+			font-size: 14px
+			font-style: normal
+			font-weight: 400
+			line-height: 20px
+			margin-bottom: 20px
+	&__radio
+		&__input
+			padding: 24px
+			border: 1px solid rgba(0,0,0,.2)
+			position: relative
+			margin-bottom: 10px
+			cursor: pointer
+			align-items: flex-start!important
+			input
+				position: absolute
+				left: -100%
+				opacity: 0
+				z-index: -1
+			&:after
+				content: ''
+				position: absolute
+				left: 24px
+				top: 50%
+				transform: translateY(-50%)
+				width: 20px
+				height: 20px
+				border-radius: 50px
+				border: 1px solid #000
+		&__input.active
+			border: 1px solid #000
+			&:after
+				background: url('../files/arr3.svg') no-repeat center
+				background-size: contain
+
+		&__left
+			padding-left: 35px
+			span
+				font-size: 14px
+				opacity: .5
+	&__address
+		p
+			margin-bottom: 20px
+		&__btn
+			text-transform: uppercase
+			font-size: 12px
+			background: #F5F5F5
+			padding: 11px 24px
+			width: fit-content
+			font-weight: 500
+			&:hover
+				background: #000
+				color: #fff
+	&__comment
+		input
+			border: none
+			border-bottom: 1px solid rgba(0,0,0,.2)
+			width: 100%
+			font-size: 16px
+			padding-bottom: 12px
+			&:focus-within
+				border-bottom: 1px solid rgba(0,0,0,1)
+	&__date
+		&__text
+			font-size: 24px
+			font-style: normal
+			font-weight: 450
+			margin-bottom: 20px
+		&__items
+			gap: 8px
+			padding-bottom: 20px
+			margin-bottom: 20px
+			border-bottom: 1px solid #F2F2F2
+			img
+				width: 60px
+				height: 90px
+				flex-shrink: 0
+		&__day
+			padding-bottom: 20px
+			margin-bottom: 20px
+			border-bottom: 1px solid #F2F2F2
+			label
+				flex-direction: column
+				p
+					font-size: 14px
+					opacity: .5
+			.product__size
+				margin: 0
+		&__time
+			label
+				border-radius: 4px
+				padding: 6px 12px
+				font-size: 14px
+	&__pay
+		.carts__radio__input
+			display: block
+			padding-left: 0
+			&::after
+				display: none
+		.carts__radio__input__top
+			display: flex
+			justify-content: space-between
+			align-items: center
+			position: relative
+			width: 100%
+			padding-left: 30px
+			&:after
+				content: ''
+				position: absolute
+				left: 24px
+				top: 50%
+				transform: translateY(-50%)
+				width: 20px
+				height: 20px
+				border-radius: 50px
+				border: 1px solid #000
+		.carts__radio__right
+			height: 20px
+		.carts__radio__input__descr
+			margin-top: 20px
+			padding: 0 24px
+			p
+				font-size: 14px
+				opacity: .5
+	.carts__radio__input.active
+		border: 1px solid #000
+		.carts__radio__input__top
+			&::after
+				content: ""
+				background: url('../files/arr3.svg') no-repeat center!important
+				background-size: contain
+.product__range
+	&__row
+		margin-bottom: 12px
+		width: 100%
+		gap: 4px
+		align-items: center
+	label
+		height: 40px
+		padding: 10px 16px
+		background: #F7F7F8
+		align-items: center
+		gap: 8px
+		display: flex
+		width: auto
+		span
+			opacity: .5
+		input
+			border: none
+			width: 100%
+			background: none
+			font-size: 16px
+.irs-to, .irs-from, .irs-max, .irs-min
+	display: none
+.irs--round .irs-bar
+	background: #000
+.irs--round .irs-handle
+	background: #fff
+	border: 5px solid #000
+.fancybox__backdrop
+	background: rgba(255,255,255,.7)
+	backdrop-filter: blur(2.5px)
+	-moz-backdrop-filter: blur(2.5px)
+	-webkit-backdrop-filter: blur(2.5px)
+.similar
+	h2
+		font-size: 40px
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+.like
+	width: 24px
+	height: 24px
+	&:hover
+		svg
+			path
+				fill: #000
+.searching
+	background: #fff
+	position: fixed
+	z-index: 111
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	min-height: 100vh
+	overflow-y: auto
+	padding-bottom: 40px
+	display: none
+	&__top
+		padding: 40px
+		width: 100%
+		align-items: center
+		border-bottom: 1px solid rgba(0,0,0,.08)
+		margin-bottom: 40px
+		.close
+			margin-left: auto
+		&__left
+			gap: 10px
+	label
+		display: flex
+		align-items: center
+		width: 100%
+		input
+			border: none
+			width: 100%
+			text-transform: uppercase
+			font-size: 14px
+	&__body
+		padding: 0 40px
+		.subtitle
+			font-size: 14px
+			text-transform: uppercase
+			opacity: .5
+			margin-bottom: 20px
+			display: block
+	&__menu
+		width: 30%
+		li
+			text-transform: uppercase
+			font-size: 14px
+			margin-bottom: 20px
+		a
+			&:hover
+				opacity: .5
+		.title
+			opacity: .5
+	.new-items__item
+		width: 100%
+	.new-items__tab
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		gap: 2px
+	.close
+		cursor: pointer
+.megamenu__col2
+	display: none
+.megamenu__col2.active
+	display: block
+.megamenu__col4
+	display: none
+.megamenu__col4.active
+	display: block
+.menu__city
+	position: relative
+.plate-fade
+	position: absolute
+	top: 50px
+	background: #fff
+	padding: 16px
+	min-width: 250px
+	box-shadow: 0px 2px 10px 0px rgba(20, 20, 20, 0.08)
+	display: none
+	label
+		width: 100%
+		display: flex
+		cursor: pointer
+		&:hover
+			opacity: .7
+	li
+		padding: 10px 0
+		font-size: 14px
+		text-transform: uppercase
+		color: #000
+		position: relative
+		display: flex
+		cursor: pointer
+		input
+			position: absolute
+			opacity: 0
+			left: -100%
+			z-index: -11
+	li.active
+		position: relative
+		&::after
+			content: ''
+			background: url('../files/tip.svg') no-repeat center
+			width: 18px
+			height: 18px
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+.plate-trigger
+	position: relative
+.sort
+	&:hover
+		opacity: 1
+	.plate-fade
+		right: 0
+		li, a
+			color: black
+.catalog-items .sort:hover
+	opacity: 1
+.catalog-items .new-items__selectors
+	overflow: visible
+.new-items__selectors
+	z-index: 5
+.plate-trigger-inner
+	display: flex
+	align-items: center
+	gap: 3px
+.plate-trigger-inner.active
+	svg
+		transform: rotate(180deg)
+.sort
+	.plate-trigger-inner.active
+		svg
+			transform: rotate(0deg)
+.irs-handle.from, .irs-handle.to
+	cursor: pointer

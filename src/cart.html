@@ -1,0 +1,334 @@
+@@include('partials/head2.html', {
+"title": "Главная"
+})
+
+<section class="carts">
+
+	<h1 class="carts__title">Оформление заказа</h1>
+	<form class="carts__wrapper row">
+		<div class="carts__left">
+			<div class="carts__col">
+				<div class="carts__name row">
+					<span>01</span>
+					<p>Получатель</p>
+				</div>
+				<div class="carts__inputs">
+					<label>
+						<input type="text" placeholder="Имя">
+					</label>
+					<label>
+						<input type="text" placeholder="Фамилия">
+					</label>
+					<label>
+						<input type="email" placeholder="e-mail">
+					</label>
+					<label>
+						<input type="tel" placeholder="Телефон">
+					</label>
+				</div>
+			</div>
+			<div class="carts__col">
+				<div class="carts__name row">
+					<span>02</span>
+					<p>Адрес и способ доставки</p>
+				</div>
+				<div class="carts__row">
+					<div class="carts__row__title">
+						Способ доставки
+					</div>
+					<div class="carts__radio select-radio">
+						<label class="carts__radio__input active">
+							<input type="radio" name="deliv">
+							<div class="carts__radio__left">
+								<p>
+									Доставка курьером
+								</p>
+								<span>Служба доставки</span>
+							</div>
+							<div class="carts__radio__right">
+								<p>Бесплатно</p>
+							</div>
+						</label>
+						<label class="carts__radio__input">
+							<input type="radio" name="deliv">
+							<div class="carts__radio__left">
+								<p>
+									Самовывоз
+								</p>
+								<span>Магазины, ПВЗ</span>
+							</div>
+							<div class="carts__radio__right">
+								<p>Бесплатно</p>
+							</div>
+						</label>
+					</div>
+				</div>
+				<div class="carts__row carts__address">
+					<div class="carts__row__title">
+						Адрес
+					</div>
+					<p>Нижегородская обл, г. Дзержинск, ул. Черняховского, д. 6, кв. 83</p>
+					<a href="" class="carts__address__btn">изменить</a>
+				</div>
+				<div class="carts__row carts__comment">
+					<div class="carts__row__title">
+						Комментарий
+					</div>
+					<input type="text" placeholder="Информация для курьера">
+				</div>
+				<div class="carts__row carts__date">
+					<div class="carts__row__title">
+						Дата и время доставки
+					</div>
+					<p class="carts__date__text">19 декабря, с 9:00 до 18:00</p>
+					<div class="carts__date__items row">
+						<a href="">
+							<img
+								src="https://monochrome.ru/uploads/thumbs/monochrome080803053-ae6fe0a523-583f44a246f73af8b342b54ddbc977a9.jpeg"
+								alt="">
+						</a>
+						<a href="">
+							<img
+								src="https://monochrome.ru/uploads/thumbs/monochrome080803053-ae6fe0a523-583f44a246f73af8b342b54ddbc977a9.jpeg"
+								alt="">
+						</a>
+					</div>
+					<div class="carts__date__day row">
+						<div class="product__size select-radio">
+
+							<ul>
+								<li>
+									<label class="active">
+										<input type="radio" name="size">
+										<span>19</span>
+										<p>чт</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="size">
+										<span>20</span>
+										<p>пт</p>
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="size">
+										<span>21</span>
+										<p>сб</p>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="carts__date__time row">
+						<div class="product__size select-radio">
+
+							<ul>
+								<li>
+									<label class="active">
+										<input type="radio" name="size">
+										<span>9:00 - 18:00</span>
+
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="size">
+										<span>9:00 - 18:00</span>
+
+									</label>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carts__col">
+				<div class="carts__name row">
+					<span>03</span>
+					<p>Способ оплаты</p>
+				</div>
+				<div class="carts__radio carts__pay select-radio">
+					<label class="carts__radio__input active">
+						<div class="carts__radio__input__top">
+							<input type="radio" name="deliv">
+							<div class="carts__radio__left">
+								<p>
+									T-Pay
+								</p>
+							</div>
+							<div class="carts__radio__right">
+								<p>
+									<svg width="47" height="24" viewBox="0 0 47 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect y="0.868408" width="47" height="22.2632" rx="11.1316" fill="#333333" />
+										<path
+											d="M7.97461 6.4342H19.1062V12.0325C19.1062 13.4678 18.3398 14.7943 17.0978 15.5119L13.5404 17.5658L9.98304 15.5119C8.73934 14.7943 7.97461 13.4678 7.97461 12.0325V6.4342Z"
+											fill="#FFDD2D" />
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11.0287 9.3811V11.1216C11.2674 10.8521 11.6993 10.6703 12.1945 10.6703H12.7319V12.6949C12.7319 13.234 12.5858 13.7048 12.3682 13.9646H14.7079C14.4919 13.7048 14.3458 13.234 14.3458 12.6965V10.6719H14.8832C15.3784 10.6719 15.8119 10.8537 16.049 11.1233V9.38273H11.0271L11.0287 9.3811Z"
+											fill="#333333" />
+										<path
+											d="M24.5812 9.3833H21.3049V14.6165H22.8991V13.2093H24.5812C24.977 13.2093 25.3618 13.1983 25.7356 13.0773C26.4612 12.8465 26.9999 12.1978 26.9999 11.3183C26.9999 10.4387 26.4722 9.80108 25.7576 9.54821C25.3618 9.40529 24.988 9.3833 24.5812 9.3833ZM22.8991 11.9779V10.6476H24.3503C24.6581 10.6476 24.8341 10.6806 24.977 10.7356C25.2298 10.8345 25.3508 11.0654 25.3508 11.3073C25.3508 11.5711 25.2079 11.824 24.933 11.912C24.8011 11.9559 24.6472 11.9779 24.3503 11.9779H22.8991Z"
+											fill="white" />
+										<path
+											d="M29.2851 12.7035L30.0437 10.5927H30.1646L30.9232 12.7035H29.2851ZM28.8893 13.8579H31.308L31.6158 14.6165H33.4079L31.264 9.3833H28.9332L26.7894 14.6165H28.5924L28.8893 13.8579Z"
+											fill="white" />
+										<path
+											d="M37.2882 9.3833L35.9909 11.769H35.9359L34.6276 9.3833H32.7696L35.1333 13.2313V14.6165H36.7825V13.0993L39.0253 9.3833H37.2882Z"
+											fill="white" />
+									</svg>
+								</p>
+							</div>
+						</div>
+					</label>
+					<label class="carts__radio__input">
+						<div class="carts__radio__input__top">
+							<input type="radio" name="deliv">
+							<div class="carts__radio__left">
+								<p>
+									Оплата картой
+								</p>
+
+							</div>
+							<div class="carts__radio__right">
+								<svg width="122" height="16" viewBox="0 0 122 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M18.5616 6.01664C18.5421 7.54891 19.9271 8.40404 20.9704 8.91241C22.0424 9.43407 22.4025 9.76855 22.3984 10.235C22.3902 10.9489 21.5433 11.264 20.7505 11.2763C19.3676 11.2977 18.5636 10.9029 17.9243 10.6042L17.4262 12.9354C18.0675 13.231 19.2551 13.4887 20.4866 13.5C23.3773 13.5 25.2686 12.0731 25.2788 9.86061C25.29 7.05282 21.3949 6.89734 21.4215 5.64227C21.4307 5.26176 21.7939 4.85568 22.5897 4.75237C22.9835 4.7002 24.0708 4.66031 25.3033 5.22801L25.7872 2.97257C25.1243 2.73117 24.2723 2.5 23.2116 2.5C20.4907 2.5 18.5769 3.94635 18.5616 6.01664ZM30.4361 2.69435C29.9083 2.69435 29.4634 3.00223 29.2649 3.4748L25.1356 13.3343H28.0242L28.5991 11.7458H32.129L32.4625 13.3343H35.0084L32.7867 2.69435H30.4361ZM30.8402 5.56863L31.6738 9.56398H29.3908L30.8402 5.56863ZM15.0592 2.69435L12.7823 13.3343H15.5349L17.8108 2.69435H15.0592ZM10.9872 2.69435L8.1221 9.9363L6.96318 3.77859C6.82714 3.09122 6.29013 2.69435 5.69379 2.69435H1.01004L0.94458 3.00325C1.90608 3.21192 2.99851 3.54845 3.66032 3.9085C4.06537 4.12842 4.18096 4.32072 4.31393 4.84341L6.50902 13.3343H9.41808L13.8778 2.69435H10.9872Z"
+										fill="#1434CB" />
+									<path d="M62.9025 1.91992H56.136V14.0803H62.9025V1.91992Z" fill="#FF5F00" />
+									<path
+										d="M56.5665 8.00146C56.5652 6.83016 56.8305 5.67393 57.3422 4.62032C57.854 3.56672 58.5987 2.64336 59.5201 1.92018C58.3793 1.02361 57.0092 0.466085 55.5665 0.311328C54.1238 0.15657 52.6667 0.410822 51.3616 1.04503C50.0566 1.67923 48.9563 2.6678 48.1865 3.89775C47.4168 5.1277 47.0085 6.54941 47.0085 8.00038C47.0085 9.45136 47.4168 10.8731 48.1865 12.103C48.9563 13.333 50.0566 14.3215 51.3616 14.9557C52.6667 15.5899 54.1238 15.8442 55.5665 15.6894C57.0092 15.5347 58.3793 14.9772 59.5201 14.0806C58.599 13.3576 57.8544 12.4346 57.3427 11.3814C56.831 10.3282 56.5655 9.1724 56.5665 8.00146Z"
+										fill="#EB001B" />
+									<path
+										d="M72.0325 8.00113C72.0324 9.45221 71.6241 10.874 70.8542 12.104C70.0843 13.334 68.9838 14.3225 67.6786 14.9567C66.3734 15.5908 64.9162 15.8449 63.4734 15.6899C62.0306 15.5349 60.6605 14.9771 59.5198 14.0803C60.4405 13.3567 61.1849 12.4334 61.6967 11.3801C62.2086 10.3269 62.4746 9.17111 62.4746 8.00006C62.4746 6.829 62.2086 5.67325 61.6967 4.61998C61.1849 3.56672 60.4405 2.64346 59.5198 1.91985C60.6605 1.023 62.0306 0.465207 63.4734 0.310227C64.9162 0.155248 66.3734 0.409336 67.6786 1.04345C68.9838 1.67756 70.0843 2.66612 70.8542 3.89611C71.6241 5.1261 72.0324 6.5479 72.0325 7.99898V8.00113Z"
+										fill="#F79E1B" />
+									<path
+										d="M118.097 2.49988H110.787C111.213 4.91279 113.555 7.18378 116.11 7.18378H121.929C122 6.97088 122 6.61603 122 6.40313C122 4.27408 120.226 2.49988 118.097 2.49988Z"
+										fill="url(#paint0_linear_152_1599)" />
+									<path
+										d="M111.426 7.60974V13.5001H114.975V10.3775H118.097C119.801 10.3775 121.291 9.17104 121.788 7.60974H111.426Z"
+										fill="#4FAD50" />
+									<path
+										d="M98.9363 2.49988V13.429H102.059C102.059 13.429 102.84 13.429 103.265 12.6483C105.394 8.4612 106.033 7.18378 106.033 7.18378H106.459V13.429H110.007V2.49988H106.885C106.885 2.49988 106.104 2.57085 105.678 3.28053C103.904 6.89991 102.91 8.74508 102.91 8.74508H102.485V2.49988H98.9363Z"
+										fill="#4FAD50" />
+									<path
+										d="M84.0325 13.5004V2.57129H87.5809C87.5809 2.57129 88.5744 2.57129 89.1422 4.13259C90.5615 8.24874 90.7035 8.81649 90.7035 8.81649C90.7035 8.81649 90.9874 7.82293 92.2648 4.13259C92.8325 2.57129 93.8261 2.57129 93.8261 2.57129H97.3745V13.5004H93.8261V7.61003H93.4003L91.4132 13.5004H89.8519L87.8648 7.61003H87.439V13.5004H84.0325Z"
+										fill="#4FAD50" />
+									<defs>
+										<linearGradient id="paint0_linear_152_1599" x1="110.616" y1="5.24988" x2="121.616"
+											y2="5.24988" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#00B4E6" />
+											<stop offset="1" stop-color="#088CCB" />
+										</linearGradient>
+									</defs>
+								</svg>
+
+							</div>
+						</div>
+					</label>
+					<label class="carts__radio__input">
+						<div class="carts__radio__input__top">
+							<input type="radio" name="deliv">
+							<div class="carts__radio__left">
+								<p>
+									Оплата долями
+								</p>
+							</div>
+							<div class="carts__radio__right">
+								<svg width="112" height="16" viewBox="0 0 112 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_152_1632)">
+										<path d="M19.8785 0H17.2089V13.5377H19.8785V0Z" fill="black" />
+										<path d="M14.1422 0.757528H11.4726V14.295H14.1422V0.757528Z" fill="black" />
+										<path d="M8.40592 1.60323H5.73629V15.1432H8.40592V1.60323Z" fill="black" />
+										<path d="M2.66964 2.45833H0L1.01725e-05 16H2.66965L2.66964 2.45833Z" fill="black" />
+										<path
+											d="M90.388 7.21263L86.0896 2.43341H83.5766V13.499H86.2003V6.43893L90.1247 10.6218H90.6096L94.4665 6.43893V13.499H97.0903V2.43341H94.5773L90.388 7.21263Z"
+											fill="black" />
+										<path
+											d="M109.59 2.43341L103.087 9.62561V2.43341H100.463V13.499H102.867L109.37 6.30675V13.499H111.994V2.43341H109.59Z"
+											fill="black" />
+										<path
+											d="M69.4445 6.48245C69.4445 8.24423 70.4079 9.63206 71.8868 10.2139L69.1137 13.499H72.3251L74.8477 10.5105H77.5774V13.499H80.2011V2.43341H73.5214C71.0309 2.43341 69.4445 4.13716 69.4445 6.48245ZM77.579 4.87057V8.14268H74.0079C72.8165 8.14268 72.1774 7.47859 72.1774 6.50501C72.1774 5.53144 72.839 4.86735 74.0079 4.86735L77.579 4.87057Z"
+											fill="black" />
+										<path
+											d="M57.2522 4.64652C57.0916 8.45216 56.2888 10.9087 54.7168 10.9087H54.3234V13.565L54.7425 13.5876C57.8945 13.7633 59.6367 10.9973 59.9225 4.956H64.0684V13.499H66.6873V2.43341H57.3405L57.2522 4.64652Z"
+											fill="black" />
+										<path
+											d="M47.3756 2.27881C43.827 2.27881 41.2739 4.73531 41.2739 7.96551C41.2739 11.3069 44.0518 13.6764 47.3756 13.6764C50.8375 13.6764 53.5271 11.1748 53.5271 7.96551C53.5271 4.75626 50.8375 2.27881 47.3756 2.27881ZM47.3756 11.02C45.37 11.02 44.0036 9.7144 44.0036 7.96551C44.0036 6.1731 45.3717 4.90295 47.3756 4.90295C49.3795 4.90295 50.7925 6.23113 50.7925 7.96551C50.7925 9.69989 49.3602 11.02 47.3756 11.02Z"
+											fill="black" />
+										<path
+											d="M38.4912 2.45428H29.2311L29.1428 4.66739C29.0111 7.85569 28.1794 10.8876 26.6074 10.9312L25.88 10.9537V16L28.5262 15.9947V13.5005H37.7189V15.9947H40.3876V10.9312H38.4912V2.45428ZM35.8675 10.9312H30.2684C31.2158 9.49335 31.7232 7.41242 31.8115 4.97849H35.8675V10.9312Z"
+											fill="black" />
+									</g>
+									<defs>
+										<clipPath id="clip0_152_1632">
+											<rect width="112" height="16" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</div>
+						</div>
+						<div class="carts__radio__input__descr">
+							<p>
+								Разделите сумму покупки на 4 платежа. Сначала платите только часть, остальные списываются
+								каждые
+								2 недели
+							</p>
+						</div>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="carts__right">
+			<div class="carts__total">
+				<div class="carts__total__title">
+					Сумма заказа
+				</div>
+				<label class="promo">
+					<input type="text" placeholder="Ввести промокод">
+					<button>
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="12" cy="12" r="10" fill="black" />
+							<path d="M8 12H16" stroke="white" />
+							<path d="M13 9L16 12L13 15" stroke="white" />
+						</svg>
+					</button>
+				</label>
+				<div class="carts__total__row">
+					<span>2 товара</span>
+					<span>115 800 ₽</span>
+				</div>
+				<div class="carts__total__row">
+					<span>Доставка</span>
+					<span>115 800 ₽</span>
+				</div>
+				<div class="carts__total__row">
+					<span>Скидка</span>
+					<span>115 800 ₽</span>
+				</div>
+				<div class="carts__total__row">
+					<span>Промокод</span>
+					<span>115 800 ₽</span>
+				</div>
+				<div class="carts__total__bottom">
+					<div class="carts__total__price row">
+						<span>Итого</span>
+						<span>64 700 ₽</span>
+					</div>
+					<a href="" class="total-btn">
+						перейти к оплате
+					</a>
+				</div>
+			</div>
+		</div>
+	</form>
+
+</section>
+
+@@include('partials/footer.html', {})

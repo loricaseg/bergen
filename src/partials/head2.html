@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@@title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body>
+    <menu class="menu scroll">
+        <div class="container menu-container">
+            <div class="menu__row row row-space">
+                <div class="menu__left row">
+                    <div class="menu__trigger">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <a href="">Мужчинам</a>
+                    <a href="">Женщинам</a>
+                </div>
+                <div class="menu__logo">
+                    <svg width="116" height="30" viewBox="0 0 116 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_5_36078)">
+                            <path
+                                d="M0 23.1807V0.284485H4.57364V23.1807H0ZM3.31589 23.1807V19.4091H9.71897C10.9767 19.4091 11.8533 19.1805 12.3869 18.6471C12.9205 18.1519 13.1873 17.4281 13.1873 16.5137V16.0947C13.1873 15.1422 12.9205 14.4184 12.3869 13.9612C11.8533 13.466 10.9386 13.2374 9.64275 13.2374H3.27777V9.73249H9.52841C10.7099 9.73249 11.5484 9.50391 12.0439 9.00865C12.5394 8.51339 12.8062 7.82765 12.8062 6.95143V6.72284C12.8062 5.84662 12.5775 5.16088 12.082 4.70372C11.5865 4.24656 10.748 4.01797 9.52841 4.01797H3.23966V0.284485H10.0225C12.6904 0.284485 14.5975 0.779744 15.7409 1.73216C16.8843 2.68458 17.4942 4.05607 17.4942 5.84662V6.15139C17.4942 7.52288 17.1511 8.55149 16.4651 9.31343C15.779 10.0754 14.75 10.4944 13.3017 10.6468V10.8373C14.9024 11.104 16.0839 11.6754 16.8081 12.5517C17.5323 13.4279 17.9134 14.6851 17.9134 16.2851V16.8947C17.9134 18.9519 17.3036 20.5139 16.084 21.6187C14.8643 22.7235 12.9456 23.1807 10.2777 23.1807H3.31589Z"
+                                fill="white" />
+                            <path
+                                d="M29.4999 23.5997C26.489 23.5997 24.2403 22.914 22.7919 21.5044C21.3055 20.1329 20.5814 18.1138 20.5814 15.4851V13.1993C20.5814 10.6087 21.2674 8.58958 22.6395 7.2181C24.0116 5.80851 25.9935 5.12277 28.6233 5.12277C30.3766 5.12277 31.863 5.42755 33.0445 6.0371C34.226 6.64665 35.1026 7.52287 35.7125 8.66578C36.3223 9.80868 36.5891 11.1802 36.5891 12.7421V13.3517C36.5891 13.7708 36.551 14.2279 36.5129 14.6851C36.4747 15.1422 36.3985 15.5613 36.3604 15.9423H32.206C32.2441 15.2946 32.2441 14.647 32.2822 14.0755C32.2822 13.466 32.2822 12.9326 32.2822 12.4755C32.2822 11.6373 32.1679 10.9516 31.9011 10.3801C31.6343 9.80868 31.2532 9.35152 30.7196 9.04674C30.186 8.74197 29.4999 8.58958 28.6614 8.58958C27.4418 8.58958 26.5271 8.93245 25.9554 9.6182C25.3837 10.3039 25.0788 11.2564 25.0788 12.5136V14.1517V14.6851V16.0566C25.0788 16.5899 25.155 17.1233 25.3456 17.5804C25.5361 18.0376 25.8029 18.4567 26.2222 18.7995C26.6414 19.1424 27.175 19.4091 27.8611 19.5996C28.5471 19.79 29.3856 19.9043 30.4147 19.9043C31.52 19.9043 32.549 19.79 33.54 19.5234C34.5309 19.2948 35.4838 18.9519 36.3604 18.5328L35.9793 22.152C35.1789 22.6092 34.226 22.9521 33.1589 23.1807C32.0154 23.4854 30.8339 23.5997 29.4999 23.5997ZM23.0206 16.0185V12.9707H35.4457V16.0185H23.0206Z"
+                                fill="white" />
+                            <path
+                                d="M39.8287 23.1807V5.61803H44.2118L44.0212 10.9897L44.4405 11.1421V23.1426H39.8287V23.1807ZM44.288 12.9707L43.1065 9.92297H44.2118C44.5167 8.51338 45.1265 7.37048 45.965 6.57045C46.8035 5.77041 47.985 5.35135 49.5096 5.35135C49.8145 5.35135 50.1194 5.38944 50.3481 5.42754C50.6149 5.46564 50.8436 5.50373 51.0341 5.57993L51.3009 10.1515C51.0341 10.0753 50.7292 9.99916 50.3862 9.96106C50.0432 9.92296 49.6621 9.88487 49.2809 9.88487C48.0613 9.88487 47.0322 10.1515 46.1556 10.6849C45.3171 11.2564 44.7073 12.0183 44.288 12.9707Z"
+                                fill="white" />
+                            <path
+                                d="M60.5244 30C58.8093 30 57.361 29.8476 56.1795 29.5809C54.9598 29.3142 54.0451 28.8571 53.3972 28.2475C52.7492 27.638 52.4443 26.838 52.4443 25.8474V25.7712C52.4443 25.0855 52.5968 24.514 52.9017 24.0569C53.2066 23.5997 53.6259 23.2188 54.1594 22.9521C54.693 22.6854 55.341 22.4949 56.0651 22.4187V22.2282C55.1504 22.0378 54.4644 21.7711 54.007 21.352C53.5496 20.9329 53.3209 20.3615 53.3209 19.6758C53.3209 19.1805 53.4353 18.7614 53.664 18.4186C53.8927 18.0757 54.2357 17.809 54.693 17.5804C55.1504 17.3899 55.684 17.2757 56.3319 17.2376V16.7042L60.2195 17.6185L58.9618 17.5804C58.4282 17.5804 58.047 17.6566 57.8184 17.809C57.5897 17.9614 57.5134 18.1519 57.5134 18.3805C57.5134 18.6852 57.6659 18.9138 58.0089 19.0662C58.3519 19.2186 58.8855 19.3329 59.6859 19.4091L63.8784 19.8662C65.8603 20.0948 67.3086 20.5901 68.2234 21.3139C69.1762 22.0378 69.6336 23.1807 69.6336 24.7426V24.8188C69.6336 25.9998 69.2906 26.9522 68.6426 27.7142C67.9566 28.4761 67.0037 29.0476 65.746 29.3904C64.4882 29.7714 62.9637 29.9238 61.1724 29.9238H60.5244V30ZM60.9818 17.809C58.3138 17.809 56.2938 17.2757 54.9217 16.2089C53.5496 15.1422 52.8636 13.6565 52.8636 11.7516V11.4849C52.8636 10.2277 53.1304 9.16103 53.7021 8.24671C54.2357 7.37048 55.1123 6.64664 56.2938 6.15139C57.4753 5.65613 58.9618 5.35136 60.8293 5.27516L70.0909 4.8942V8.24671L65.3267 8.05623V8.24671C66.089 8.3991 66.6988 8.66577 67.1943 9.00865C67.6898 9.35152 68.0709 9.77059 68.2996 10.3039C68.5664 10.8373 68.6807 11.4849 68.6807 12.2469V12.3993C68.6807 14.1136 68.0328 15.447 66.7751 16.3613C65.5173 17.3518 63.5735 17.809 60.9818 17.809ZM60.7912 26.5332H61.2867C62.2014 26.5332 63.0018 26.457 63.6116 26.3427C64.2214 26.2284 64.6788 26.0379 64.9837 25.7712C65.2886 25.5046 65.4411 25.1998 65.4411 24.7807V24.7426C65.4411 24.2474 65.2505 23.8664 64.8694 23.6378C64.4882 23.4092 63.8403 23.2569 63.0018 23.1807L57.8565 22.6854L58.9237 22.6473C58.4663 22.7235 58.0851 22.8378 57.7421 23.0283C57.3991 23.1807 57.1323 23.4092 56.9417 23.6759C56.7512 23.9426 56.6368 24.2474 56.6368 24.6283V24.6664C56.6368 25.1236 56.7893 25.4665 57.0942 25.7712C57.3991 26.076 57.8565 26.2665 58.5044 26.4189C59.1142 26.457 59.8765 26.5332 60.7912 26.5332ZM60.8674 14.6089C61.6678 14.6089 62.3158 14.4946 62.8494 14.266C63.3829 14.0374 63.7641 13.6946 64.0309 13.2755C64.2977 12.8183 64.4501 12.285 64.4501 11.6754V11.4849C64.4501 10.8373 64.3358 10.3039 64.069 9.88487C63.8022 9.46581 63.4211 9.12294 62.8875 8.89436C62.3539 8.66578 61.7059 8.55149 60.9056 8.55149H60.8674C60.0289 8.55149 59.3429 8.66578 58.7712 8.89436C58.2376 9.12294 57.8565 9.46581 57.5897 9.88487C57.3229 10.3039 57.2085 10.8373 57.2085 11.4468V11.6373C57.2085 12.285 57.361 12.8183 57.6278 13.2374C57.8946 13.6565 58.3138 13.9993 58.8474 14.2279C59.381 14.4946 60.0671 14.6089 60.8674 14.6089Z"
+                                fill="white" />
+                            <path
+                                d="M80.3816 23.5997C77.3706 23.5997 75.1219 22.914 73.6736 21.5044C72.1872 20.1329 71.463 18.1138 71.463 15.4851V13.1993C71.463 10.6087 72.1491 8.58958 73.5211 7.2181C74.8932 5.80851 76.8751 5.12277 79.505 5.12277C81.2582 5.12277 82.7446 5.42755 83.9262 6.0371C85.1077 6.64665 85.9843 7.52287 86.5941 8.66578C87.2039 9.80868 87.4707 11.1802 87.4707 12.7421V13.3517C87.4707 13.7708 87.4326 14.2279 87.3945 14.6851C87.3564 15.1422 87.2802 15.5613 87.242 15.9423H83.0877C83.1258 15.2946 83.1258 14.647 83.1639 14.0755C83.202 13.5041 83.1639 12.9326 83.1639 12.4755C83.1639 11.6373 83.0496 10.9516 82.7828 10.3801C82.516 9.80868 82.1348 9.35152 81.6012 9.04674C81.0676 8.74197 80.3816 8.58958 79.5431 8.58958C78.3235 8.58958 77.4087 8.93245 76.837 9.6182C76.2653 10.3039 75.9604 11.2564 75.9604 12.5136V14.1517V14.6851V16.0566C75.9604 16.5899 76.0366 17.1233 76.2272 17.5804C76.4178 18.0376 76.6846 18.4567 77.1038 18.7995C77.5231 19.1424 78.0567 19.4091 78.7427 19.5996C79.4288 19.79 80.2673 19.9043 81.2963 19.9043C82.4016 19.9043 83.4307 19.79 84.4216 19.5234C85.4126 19.2948 86.3654 18.9519 87.242 18.5328L86.8609 22.152C86.0605 22.6092 85.1077 22.9521 84.0405 23.1807C82.8971 23.4854 81.6775 23.5997 80.3816 23.5997ZM73.9023 16.0185V12.9707H86.3273V16.0185H73.9023Z"
+                                fill="white" />
+                            <path
+                                d="M90.7104 23.1807V5.61803H95.2841L95.0935 9.88487L95.2841 10.2658V23.1807H90.7104ZM102.145 23.1807V12.6278C102.145 11.904 102.03 11.2564 101.84 10.723C101.649 10.1896 101.306 9.77058 100.849 9.46581C100.391 9.16103 99.7815 9.00864 98.9811 9.00864C98.2951 9.00864 97.6852 9.12293 97.1516 9.38961C96.6181 9.65629 96.1988 9.96107 95.8939 10.4182C95.5509 10.8373 95.3222 11.3325 95.1316 11.8659L94.4075 9.35152H95.2841C95.4747 8.58958 95.7796 7.86574 96.2369 7.25619C96.6943 6.64664 97.3041 6.15138 98.0664 5.77041C98.8286 5.38945 99.8196 5.23706 100.963 5.23706C102.297 5.23706 103.402 5.50374 104.241 5.999C105.079 6.49426 105.689 7.25619 106.108 8.24671C106.528 9.23722 106.718 10.4944 106.718 11.9802V23.1807H102.145Z"
+                                fill="white" />
+                            <path
+                                d="M113.998 2.30363C114.493 2.53221 114.836 2.87508 115.103 3.29414C115.37 3.71321 115.484 4.20847 115.484 4.77992V4.93231C115.484 5.50376 115.37 5.99902 115.103 6.41809C114.836 6.83715 114.455 7.18002 113.998 7.4086C113.502 7.63718 112.969 7.75147 112.321 7.75147C111.33 7.75147 110.568 7.4848 109.996 6.98954C109.424 6.49428 109.119 5.77044 109.119 4.93231V4.77992C109.119 4.20847 109.234 3.71321 109.5 3.29414C109.767 2.87508 110.148 2.53221 110.606 2.30363C111.101 2.07505 111.635 1.96075 112.283 1.96075C112.969 1.96075 113.502 2.07505 113.998 2.30363ZM114.836 4.77992C114.836 4.09418 114.608 3.52273 114.15 3.14176C113.693 2.72269 113.083 2.53221 112.283 2.53221C111.482 2.53221 110.873 2.72269 110.415 3.14176C109.958 3.56082 109.729 4.09418 109.729 4.77992V4.97041C109.729 5.65615 109.958 6.18951 110.415 6.60857C110.873 7.02763 111.482 7.21812 112.283 7.21812C113.083 7.21812 113.693 7.02763 114.15 6.60857C114.608 6.18951 114.836 5.65615 114.836 4.97041V4.77992ZM113.655 3.67511C113.845 3.8275 113.922 4.01799 113.922 4.32276V4.43705C113.922 4.66563 113.845 4.85611 113.693 5.0085C113.541 5.16089 113.35 5.27518 113.083 5.31327L113.884 6.2657V6.30379H113.197L112.359 5.31327H111.559V6.30379H110.911V3.48463H112.893C113.197 3.44653 113.464 3.52272 113.655 3.67511ZM113.236 4.28466C113.236 4.17037 113.197 4.05608 113.083 3.97989C112.969 3.90369 112.854 3.86559 112.664 3.86559H111.52V4.77992H112.664C112.854 4.77992 112.969 4.74182 113.083 4.66563C113.197 4.58944 113.236 4.47514 113.236 4.36085V4.28466Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5_36078">
+                                <rect width="115.522" height="30" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="menu__right row">
+                    <div class="menu__city row plate-trigger">
+                        <div class="plate-trigger-inner">
+                            <span>Москва</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6L8 10L12 6" stroke="white" />
+                            </svg>
+                        </div>
+                        <ul class="plate-fade">
+                            <li class="active">
+                                <label>
+                                    <input type="radio" name="city">
+                                    <span>Москва</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="city">
+                                    <span>СПБ</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="city">
+                                    <span>Казань</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="menu-search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10.5" cy="10.5" r="7" stroke="white" />
+                            <path d="M15.5 15.5L21 21" stroke="white" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.6117 5.47894C11.7067 5.59104 11.8462 5.65567 11.9932 5.65567C12.1401 5.65567 12.2796 5.59104 12.3746 5.47894C14.2235 3.29725 17.2041 2.7707 19.5103 4.70526C21.8472 6.66564 22.1344 9.99552 20.3259 12.3442C19.5353 13.3711 17.917 14.9967 16.2683 16.5674C14.6291 18.129 12.9904 19.6076 12.181 20.3311C12.0844 20.4175 12.0333 20.4626 11.9942 20.4923C11.9939 20.4926 11.9935 20.4929 11.9931 20.4931C11.9928 20.4929 11.9924 20.4926 11.9921 20.4923C11.953 20.4626 11.9019 20.4175 11.8053 20.3311C10.9959 19.6076 9.35725 18.129 7.71801 16.5674C6.06927 14.9967 4.45101 13.3711 3.66037 12.3442C1.85629 10.0012 2.17558 6.68916 4.48123 4.70084C6.73918 2.75367 9.75896 3.29278 11.6117 5.47894Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="6" r="3.5" stroke="white" />
+                            <path
+                                d="M12 21.5C8.39863 21.5 5.64744 20.3887 4.52368 19.7364C4.65336 18.4877 5.14184 16.7518 6.2149 15.2968C7.35942 13.7449 9.17431 12.5 12 12.5C14.823 12.5 16.5473 13.7416 17.5856 15.2797C18.5743 16.7444 18.9513 18.4991 18.9955 19.7505C18.0695 20.3819 15.6132 21.5 12 21.5Z"
+                                stroke="white" />
+                        </svg>
+                    </a>
+                    <a href="" class="cart sidebar-trigger" data-show="#cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4.5" y="8.5" width="15" height="13" rx="0.5" stroke="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9 10V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V10H16V6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6V10H9Z"
+                                fill="white" />
+                        </svg>
+                        <span>3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="megamenu">
+            <div class="container">
+                <ul class="megamenu__col megamenu__col1">
+                    <li>
+                        <a href="" data-cat="#cat1">
+                            Мужчинам
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-cat="#cat2">
+                            Женщинам
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-cat="#cat3">
+                            Новинки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-cat="#cat4">
+                            Бестселлеры
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-cat="#cat5">
+                            Распродажа
+                        </a>
+                    </li>
+                </ul>
+                <ul class="megamenu__col megamenu__col2 active" id="cat1">
+                    <li><a href="" data-item="#menu-cart1">Куртки</a></li>
+                    <li><a href="" data-item="#menu-cart2">Аляски</a></li>
+                    <li><a href="" data-item="#menu-cart1">Бомберы</a></li>
+                    <li><a href="" data-item="#menu-cart1">Зимние куртки</a></li>
+                    <li><a href="" data-item="#menu-cart1">Куртки с капюшоном</a></li>
+                    <li><a href="" data-item="#menu-cart2">Парки</a></li>
+                    <li><a href="" data-item="#menu-cart1">Пуховики</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col2" id="cat2">
+                    <li><a href="" data-item="#menu-cart1">Куртки</a></li>
+                    <li><a href="" data-item="#menu-cart2">Аляски</a></li>
+
+                </ul>
+                <ul class="megamenu__col megamenu__col2" id="cat3">
+
+                    <li><a href="" data-item="#menu-cart1">Парки</a></li>
+                    <li><a href="" data-item="#menu-cart2">Пуховики</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col2" id="cat4">
+
+                    <li><a href="">Зимние куртки</a></li>
+                    <li><a href="">Куртки с капюшоном</a></li>
+                    <li><a href="">Парки</a></li>
+                    <li><a href="">Пуховики</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col2" id="cat5">
+
+                    <li><a href="">Куртки с капюшоном</a></li>
+                    <li><a href="">Парки</a></li>
+                    <li><a href="">Пуховики</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col3">
+                    <li><a href="">Зима 2024</a></li>
+                    <li><a href="">Весна 2025</a></li>
+                    <li><a href="">Демисезон</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col4 active" id="menu-cart1">
+                    <a href="" class="new-items__item">
+                        <div class="label">
+                            натуральный пух
+                        </div>
+                        <div class="new-items__img">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome080803053-ae6fe0a523-583f44a246f73af8b342b54ddbc977a9.jpeg"
+                                alt="" class="img-hover">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome220802590-d6d976dce3-2b4c15e6e34e6fad008c373b297bc32c.jpeg"
+                                alt="" class="img-main">
+
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="red color"></div>
+                            <div class="black color"></div>
+                        </div>
+
+                    </a>
+                </ul>
+                <ul class="megamenu__col megamenu__col4" id="menu-cart2">
+                    <a href="" class="new-items__item">
+                        <div class="label">
+                            натуральный пух
+                        </div>
+                        <div class="new-items__img">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome220802714-c5a7793e19-b1e2377e1f0f5e2b691a1a5d98e5962b.jpeg"
+                                alt="" class="img-hover">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome230803417-4ba13ebe5e-7da081e8132871494bfa57b52a308f1a.jpeg"
+                                alt="" class="img-main">
+
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="red color"></div>
+                            <div class="black color"></div>
+                        </div>
+
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </menu>
+
+    <div class="megamenu">
+        <div class="container">
+            <ul class="megamenu__col megamenu__col1">
+                <li>
+                    <a href="" data-cat="#cat1">
+                        Мужчинам
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-cat="#cat2">
+                        Женщинам
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-cat="#cat3">
+                        Новинки
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-cat="#cat4">
+                        Бестселлеры
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-cat="#cat5">
+                        Распродажа
+                    </a>
+                </li>
+            </ul>
+            <ul class="megamenu__col megamenu__col2 active" id="cat1">
+                <li><a href="" data-item="#menu-cart1">Куртки</a></li>
+                <li><a href="" data-item="#menu-cart2">Аляски</a></li>
+                <li><a href="" data-item="#menu-cart1">Бомберы</a></li>
+                <li><a href="" data-item="#menu-cart1">Зимние куртки</a></li>
+                <li><a href="" data-item="#menu-cart1">Куртки с капюшоном</a></li>
+                <li><a href="" data-item="#menu-cart2">Парки</a></li>
+                <li><a href="" data-item="#menu-cart1">Пуховики</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col2" id="cat2">
+                <li><a href="" data-item="#menu-cart1">Куртки</a></li>
+                <li><a href="" data-item="#menu-cart2">Аляски</a></li>
+
+            </ul>
+            <ul class="megamenu__col megamenu__col2" id="cat3">
+
+                <li><a href="" data-item="#menu-cart1">Парки</a></li>
+                <li><a href="" data-item="#menu-cart2">Пуховики</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col2" id="cat4">
+
+                <li><a href="">Зимние куртки</a></li>
+                <li><a href="">Куртки с капюшоном</a></li>
+                <li><a href="">Парки</a></li>
+                <li><a href="">Пуховики</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col2" id="cat5">
+
+                <li><a href="">Куртки с капюшоном</a></li>
+                <li><a href="">Парки</a></li>
+                <li><a href="">Пуховики</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col3">
+                <li><a href="">Зима 2024</a></li>
+                <li><a href="">Весна 2025</a></li>
+                <li><a href="">Демисезон</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col4 active" id="menu-cart1">
+                <a href="" class="new-items__item">
+                    <div class="label">
+                        натуральный пух
+                    </div>
+                    <div class="new-items__img">
+                        <img src="https://monochrome.ru/uploads/thumbs/monochrome080803053-ae6fe0a523-583f44a246f73af8b342b54ddbc977a9.jpeg"
+                            alt="" class="img-hover">
+                        <img src="https://monochrome.ru/uploads/thumbs/monochrome220802590-d6d976dce3-2b4c15e6e34e6fad008c373b297bc32c.jpeg"
+                            alt="" class="img-main">
+
+                        <button class="addToCart">добавить в корзину</button>
+                    </div>
+                    <p>Куртка LAPLANGER Берген пуховая</p>
+                    <div class="price">52 000 Р</div>
+                    <div class="new-items__colors row">
+                        <div class="red color"></div>
+                        <div class="black color"></div>
+                    </div>
+
+                </a>
+            </ul>
+            <ul class="megamenu__col megamenu__col4" id="menu-cart2">
+                <a href="" class="new-items__item">
+                    <div class="label">
+                        натуральный пух
+                    </div>
+                    <div class="new-items__img">
+                        <img src="https://monochrome.ru/uploads/thumbs/monochrome220802714-c5a7793e19-b1e2377e1f0f5e2b691a1a5d98e5962b.jpeg"
+                            alt="" class="img-hover">
+                        <img src="https://monochrome.ru/uploads/thumbs/monochrome230803417-4ba13ebe5e-7da081e8132871494bfa57b52a308f1a.jpeg"
+                            alt="" class="img-main">
+
+                        <button class="addToCart">добавить в корзину</button>
+                    </div>
+                    <p>Куртка LAPLANGER Берген пуховая</p>
+                    <div class="price">52 000 Р</div>
+                    <div class="new-items__colors row">
+                        <div class="red color"></div>
+                        <div class="black color"></div>
+                    </div>
+
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="left-sidebar cart-sidebar empty" id="cart">
+        <div class="close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 19L19 5" stroke="black" />
+                <path d="M19 19L5 5" stroke="black" />
+            </svg>
+
+        </div>
+        <div class="left-sidebar__wrapper">
+            <div class="cart-sidebar__container">
+                <div class="left-sidebar__title">
+                    Корзина <span>2</span>
+                </div>
+                <p>В корзине пока нет товаров</p>
+            </div>
+            <div class="cart-sidebar__bottom">
+
+                <a href="" class="btn-prod">
+                    Перейти в каталог
+                </a>
+
+            </div>
+        </div>
+        <div class="back"></div>
+    </div>
+
+    <div class="searching">
+        <form class="searching__top row">
+            <label class="searching__top__left">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.5" cy="10.5" r="7" stroke="black" />
+                    <path d="M15.5 15.5L21 21" stroke="black" />
+                </svg>
+
+                <input type="search" placeholder="название товара или категории">
+            </label>
+            <div class="searching__top__right close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 20L20 4" stroke="black" />
+                    <path d="M20 20L4 4" stroke="black" />
+                </svg>
+
+            </div>
+        </form>
+
+        <div class="searching__body empty row">
+            <ul class="searching__menu">
+                <li class="title">
+                    Часто ищут
+                </li>
+                <li>
+                    <a href="">Часто ищут</a>
+                </li>
+                <li>
+                    <a href="">
+                        Парка
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        новинки
+                    </a>
+                </li>
+            </ul>
+            <div class="searching__body__feed">
+                <span class="subtitle">Популярные товары</span>
+                <div class="new-items__tab">
+                    <a href="" class="new-items__item">
+                        <div class="new-items__img">
+                            <video playsinline="" loop="true" muted="" autoplay="">
+                                <source src="https://monochrome.ru/uploads/products/1starlook5-3f3bc7bbe2.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="cyan color"></div>
+                            <div class="grey color"></div>
+                        </div>
+
+                    </a>
+                    <a href="" class="new-items__item">
+                        <div class="label">
+                            натуральный пух
+                        </div>
+                        <div class="new-items__img">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome220802590-d6d976dce3-2b4c15e6e34e6fad008c373b297bc32c.jpeg"
+                                alt="" class="img-main">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome080803053-ae6fe0a523-583f44a246f73af8b342b54ddbc977a9.jpeg"
+                                alt="" class="img-hover">
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="red color"></div>
+                            <div class="black color"></div>
+                        </div>
+
+                    </a>
+                    <a href="" class="new-items__item">
+                        <div class="new-items__img">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome220802714-c5a7793e19-b1e2377e1f0f5e2b691a1a5d98e5962b.jpeg"
+                                alt="" class="img-main">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome230803417-4ba13ebe5e-7da081e8132871494bfa57b52a308f1a.jpeg"
+                                alt="" class="img-hover">
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="cyan color"></div>
+                            <div class="grey color"></div>
+                        </div>
+
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>

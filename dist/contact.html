@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body>
+    <menu class="menu scroll">
+        <div class="container menu-container">
+            <div class="menu__row row row-space">
+                <div class="menu__left row">
+                    <div class="menu__trigger">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <a href="">Мужчинам</a>
+                    <a href="">Женщинам</a>
+                </div>
+                <div class="menu__logo">
+                    <svg width="116" height="30" viewBox="0 0 116 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_5_36078)">
+                            <path
+                                d="M0 23.1807V0.284485H4.57364V23.1807H0ZM3.31589 23.1807V19.4091H9.71897C10.9767 19.4091 11.8533 19.1805 12.3869 18.6471C12.9205 18.1519 13.1873 17.4281 13.1873 16.5137V16.0947C13.1873 15.1422 12.9205 14.4184 12.3869 13.9612C11.8533 13.466 10.9386 13.2374 9.64275 13.2374H3.27777V9.73249H9.52841C10.7099 9.73249 11.5484 9.50391 12.0439 9.00865C12.5394 8.51339 12.8062 7.82765 12.8062 6.95143V6.72284C12.8062 5.84662 12.5775 5.16088 12.082 4.70372C11.5865 4.24656 10.748 4.01797 9.52841 4.01797H3.23966V0.284485H10.0225C12.6904 0.284485 14.5975 0.779744 15.7409 1.73216C16.8843 2.68458 17.4942 4.05607 17.4942 5.84662V6.15139C17.4942 7.52288 17.1511 8.55149 16.4651 9.31343C15.779 10.0754 14.75 10.4944 13.3017 10.6468V10.8373C14.9024 11.104 16.0839 11.6754 16.8081 12.5517C17.5323 13.4279 17.9134 14.6851 17.9134 16.2851V16.8947C17.9134 18.9519 17.3036 20.5139 16.084 21.6187C14.8643 22.7235 12.9456 23.1807 10.2777 23.1807H3.31589Z"
+                                fill="white" />
+                            <path
+                                d="M29.4999 23.5997C26.489 23.5997 24.2403 22.914 22.7919 21.5044C21.3055 20.1329 20.5814 18.1138 20.5814 15.4851V13.1993C20.5814 10.6087 21.2674 8.58958 22.6395 7.2181C24.0116 5.80851 25.9935 5.12277 28.6233 5.12277C30.3766 5.12277 31.863 5.42755 33.0445 6.0371C34.226 6.64665 35.1026 7.52287 35.7125 8.66578C36.3223 9.80868 36.5891 11.1802 36.5891 12.7421V13.3517C36.5891 13.7708 36.551 14.2279 36.5129 14.6851C36.4747 15.1422 36.3985 15.5613 36.3604 15.9423H32.206C32.2441 15.2946 32.2441 14.647 32.2822 14.0755C32.2822 13.466 32.2822 12.9326 32.2822 12.4755C32.2822 11.6373 32.1679 10.9516 31.9011 10.3801C31.6343 9.80868 31.2532 9.35152 30.7196 9.04674C30.186 8.74197 29.4999 8.58958 28.6614 8.58958C27.4418 8.58958 26.5271 8.93245 25.9554 9.6182C25.3837 10.3039 25.0788 11.2564 25.0788 12.5136V14.1517V14.6851V16.0566C25.0788 16.5899 25.155 17.1233 25.3456 17.5804C25.5361 18.0376 25.8029 18.4567 26.2222 18.7995C26.6414 19.1424 27.175 19.4091 27.8611 19.5996C28.5471 19.79 29.3856 19.9043 30.4147 19.9043C31.52 19.9043 32.549 19.79 33.54 19.5234C34.5309 19.2948 35.4838 18.9519 36.3604 18.5328L35.9793 22.152C35.1789 22.6092 34.226 22.9521 33.1589 23.1807C32.0154 23.4854 30.8339 23.5997 29.4999 23.5997ZM23.0206 16.0185V12.9707H35.4457V16.0185H23.0206Z"
+                                fill="white" />
+                            <path
+                                d="M39.8287 23.1807V5.61803H44.2118L44.0212 10.9897L44.4405 11.1421V23.1426H39.8287V23.1807ZM44.288 12.9707L43.1065 9.92297H44.2118C44.5167 8.51338 45.1265 7.37048 45.965 6.57045C46.8035 5.77041 47.985 5.35135 49.5096 5.35135C49.8145 5.35135 50.1194 5.38944 50.3481 5.42754C50.6149 5.46564 50.8436 5.50373 51.0341 5.57993L51.3009 10.1515C51.0341 10.0753 50.7292 9.99916 50.3862 9.96106C50.0432 9.92296 49.6621 9.88487 49.2809 9.88487C48.0613 9.88487 47.0322 10.1515 46.1556 10.6849C45.3171 11.2564 44.7073 12.0183 44.288 12.9707Z"
+                                fill="white" />
+                            <path
+                                d="M60.5244 30C58.8093 30 57.361 29.8476 56.1795 29.5809C54.9598 29.3142 54.0451 28.8571 53.3972 28.2475C52.7492 27.638 52.4443 26.838 52.4443 25.8474V25.7712C52.4443 25.0855 52.5968 24.514 52.9017 24.0569C53.2066 23.5997 53.6259 23.2188 54.1594 22.9521C54.693 22.6854 55.341 22.4949 56.0651 22.4187V22.2282C55.1504 22.0378 54.4644 21.7711 54.007 21.352C53.5496 20.9329 53.3209 20.3615 53.3209 19.6758C53.3209 19.1805 53.4353 18.7614 53.664 18.4186C53.8927 18.0757 54.2357 17.809 54.693 17.5804C55.1504 17.3899 55.684 17.2757 56.3319 17.2376V16.7042L60.2195 17.6185L58.9618 17.5804C58.4282 17.5804 58.047 17.6566 57.8184 17.809C57.5897 17.9614 57.5134 18.1519 57.5134 18.3805C57.5134 18.6852 57.6659 18.9138 58.0089 19.0662C58.3519 19.2186 58.8855 19.3329 59.6859 19.4091L63.8784 19.8662C65.8603 20.0948 67.3086 20.5901 68.2234 21.3139C69.1762 22.0378 69.6336 23.1807 69.6336 24.7426V24.8188C69.6336 25.9998 69.2906 26.9522 68.6426 27.7142C67.9566 28.4761 67.0037 29.0476 65.746 29.3904C64.4882 29.7714 62.9637 29.9238 61.1724 29.9238H60.5244V30ZM60.9818 17.809C58.3138 17.809 56.2938 17.2757 54.9217 16.2089C53.5496 15.1422 52.8636 13.6565 52.8636 11.7516V11.4849C52.8636 10.2277 53.1304 9.16103 53.7021 8.24671C54.2357 7.37048 55.1123 6.64664 56.2938 6.15139C57.4753 5.65613 58.9618 5.35136 60.8293 5.27516L70.0909 4.8942V8.24671L65.3267 8.05623V8.24671C66.089 8.3991 66.6988 8.66577 67.1943 9.00865C67.6898 9.35152 68.0709 9.77059 68.2996 10.3039C68.5664 10.8373 68.6807 11.4849 68.6807 12.2469V12.3993C68.6807 14.1136 68.0328 15.447 66.7751 16.3613C65.5173 17.3518 63.5735 17.809 60.9818 17.809ZM60.7912 26.5332H61.2867C62.2014 26.5332 63.0018 26.457 63.6116 26.3427C64.2214 26.2284 64.6788 26.0379 64.9837 25.7712C65.2886 25.5046 65.4411 25.1998 65.4411 24.7807V24.7426C65.4411 24.2474 65.2505 23.8664 64.8694 23.6378C64.4882 23.4092 63.8403 23.2569 63.0018 23.1807L57.8565 22.6854L58.9237 22.6473C58.4663 22.7235 58.0851 22.8378 57.7421 23.0283C57.3991 23.1807 57.1323 23.4092 56.9417 23.6759C56.7512 23.9426 56.6368 24.2474 56.6368 24.6283V24.6664C56.6368 25.1236 56.7893 25.4665 57.0942 25.7712C57.3991 26.076 57.8565 26.2665 58.5044 26.4189C59.1142 26.457 59.8765 26.5332 60.7912 26.5332ZM60.8674 14.6089C61.6678 14.6089 62.3158 14.4946 62.8494 14.266C63.3829 14.0374 63.7641 13.6946 64.0309 13.2755C64.2977 12.8183 64.4501 12.285 64.4501 11.6754V11.4849C64.4501 10.8373 64.3358 10.3039 64.069 9.88487C63.8022 9.46581 63.4211 9.12294 62.8875 8.89436C62.3539 8.66578 61.7059 8.55149 60.9056 8.55149H60.8674C60.0289 8.55149 59.3429 8.66578 58.7712 8.89436C58.2376 9.12294 57.8565 9.46581 57.5897 9.88487C57.3229 10.3039 57.2085 10.8373 57.2085 11.4468V11.6373C57.2085 12.285 57.361 12.8183 57.6278 13.2374C57.8946 13.6565 58.3138 13.9993 58.8474 14.2279C59.381 14.4946 60.0671 14.6089 60.8674 14.6089Z"
+                                fill="white" />
+                            <path
+                                d="M80.3816 23.5997C77.3706 23.5997 75.1219 22.914 73.6736 21.5044C72.1872 20.1329 71.463 18.1138 71.463 15.4851V13.1993C71.463 10.6087 72.1491 8.58958 73.5211 7.2181C74.8932 5.80851 76.8751 5.12277 79.505 5.12277C81.2582 5.12277 82.7446 5.42755 83.9262 6.0371C85.1077 6.64665 85.9843 7.52287 86.5941 8.66578C87.2039 9.80868 87.4707 11.1802 87.4707 12.7421V13.3517C87.4707 13.7708 87.4326 14.2279 87.3945 14.6851C87.3564 15.1422 87.2802 15.5613 87.242 15.9423H83.0877C83.1258 15.2946 83.1258 14.647 83.1639 14.0755C83.202 13.5041 83.1639 12.9326 83.1639 12.4755C83.1639 11.6373 83.0496 10.9516 82.7828 10.3801C82.516 9.80868 82.1348 9.35152 81.6012 9.04674C81.0676 8.74197 80.3816 8.58958 79.5431 8.58958C78.3235 8.58958 77.4087 8.93245 76.837 9.6182C76.2653 10.3039 75.9604 11.2564 75.9604 12.5136V14.1517V14.6851V16.0566C75.9604 16.5899 76.0366 17.1233 76.2272 17.5804C76.4178 18.0376 76.6846 18.4567 77.1038 18.7995C77.5231 19.1424 78.0567 19.4091 78.7427 19.5996C79.4288 19.79 80.2673 19.9043 81.2963 19.9043C82.4016 19.9043 83.4307 19.79 84.4216 19.5234C85.4126 19.2948 86.3654 18.9519 87.242 18.5328L86.8609 22.152C86.0605 22.6092 85.1077 22.9521 84.0405 23.1807C82.8971 23.4854 81.6775 23.5997 80.3816 23.5997ZM73.9023 16.0185V12.9707H86.3273V16.0185H73.9023Z"
+                                fill="white" />
+                            <path
+                                d="M90.7104 23.1807V5.61803H95.2841L95.0935 9.88487L95.2841 10.2658V23.1807H90.7104ZM102.145 23.1807V12.6278C102.145 11.904 102.03 11.2564 101.84 10.723C101.649 10.1896 101.306 9.77058 100.849 9.46581C100.391 9.16103 99.7815 9.00864 98.9811 9.00864C98.2951 9.00864 97.6852 9.12293 97.1516 9.38961C96.6181 9.65629 96.1988 9.96107 95.8939 10.4182C95.5509 10.8373 95.3222 11.3325 95.1316 11.8659L94.4075 9.35152H95.2841C95.4747 8.58958 95.7796 7.86574 96.2369 7.25619C96.6943 6.64664 97.3041 6.15138 98.0664 5.77041C98.8286 5.38945 99.8196 5.23706 100.963 5.23706C102.297 5.23706 103.402 5.50374 104.241 5.999C105.079 6.49426 105.689 7.25619 106.108 8.24671C106.528 9.23722 106.718 10.4944 106.718 11.9802V23.1807H102.145Z"
+                                fill="white" />
+                            <path
+                                d="M113.998 2.30363C114.493 2.53221 114.836 2.87508 115.103 3.29414C115.37 3.71321 115.484 4.20847 115.484 4.77992V4.93231C115.484 5.50376 115.37 5.99902 115.103 6.41809C114.836 6.83715 114.455 7.18002 113.998 7.4086C113.502 7.63718 112.969 7.75147 112.321 7.75147C111.33 7.75147 110.568 7.4848 109.996 6.98954C109.424 6.49428 109.119 5.77044 109.119 4.93231V4.77992C109.119 4.20847 109.234 3.71321 109.5 3.29414C109.767 2.87508 110.148 2.53221 110.606 2.30363C111.101 2.07505 111.635 1.96075 112.283 1.96075C112.969 1.96075 113.502 2.07505 113.998 2.30363ZM114.836 4.77992C114.836 4.09418 114.608 3.52273 114.15 3.14176C113.693 2.72269 113.083 2.53221 112.283 2.53221C111.482 2.53221 110.873 2.72269 110.415 3.14176C109.958 3.56082 109.729 4.09418 109.729 4.77992V4.97041C109.729 5.65615 109.958 6.18951 110.415 6.60857C110.873 7.02763 111.482 7.21812 112.283 7.21812C113.083 7.21812 113.693 7.02763 114.15 6.60857C114.608 6.18951 114.836 5.65615 114.836 4.97041V4.77992ZM113.655 3.67511C113.845 3.8275 113.922 4.01799 113.922 4.32276V4.43705C113.922 4.66563 113.845 4.85611 113.693 5.0085C113.541 5.16089 113.35 5.27518 113.083 5.31327L113.884 6.2657V6.30379H113.197L112.359 5.31327H111.559V6.30379H110.911V3.48463H112.893C113.197 3.44653 113.464 3.52272 113.655 3.67511ZM113.236 4.28466C113.236 4.17037 113.197 4.05608 113.083 3.97989C112.969 3.90369 112.854 3.86559 112.664 3.86559H111.52V4.77992H112.664C112.854 4.77992 112.969 4.74182 113.083 4.66563C113.197 4.58944 113.236 4.47514 113.236 4.36085V4.28466Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_5_36078">
+                                <rect width="115.522" height="30" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="menu__right row">
+                    <div class="menu__city row plate-trigger">
+                        <div class="plate-trigger-inner">
+                            <span>Москва</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6L8 10L12 6" stroke="white" />
+                            </svg>
+                        </div>
+                        <ul class="plate-fade">
+                            <li class="active">
+                                <label>
+                                    <input type="radio" name="city">
+                                    <span>Москва</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="city">
+                                    <span>СПБ</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="city">
+                                    <span>Казань</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="menu-search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10.5" cy="10.5" r="7" stroke="white" />
+                            <path d="M15.5 15.5L21 21" stroke="white" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.6117 5.47894C11.7067 5.59104 11.8462 5.65567 11.9932 5.65567C12.1401 5.65567 12.2796 5.59104 12.3746 5.47894C14.2235 3.29725 17.2041 2.7707 19.5103 4.70526C21.8472 6.66564 22.1344 9.99552 20.3259 12.3442C19.5353 13.3711 17.917 14.9967 16.2683 16.5674C14.6291 18.129 12.9904 19.6076 12.181 20.3311C12.0844 20.4175 12.0333 20.4626 11.9942 20.4923C11.9939 20.4926 11.9935 20.4929 11.9931 20.4931C11.9928 20.4929 11.9924 20.4926 11.9921 20.4923C11.953 20.4626 11.9019 20.4175 11.8053 20.3311C10.9959 19.6076 9.35725 18.129 7.71801 16.5674C6.06927 14.9967 4.45101 13.3711 3.66037 12.3442C1.85629 10.0012 2.17558 6.68916 4.48123 4.70084C6.73918 2.75367 9.75896 3.29278 11.6117 5.47894Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="6" r="3.5" stroke="white" />
+                            <path
+                                d="M12 21.5C8.39863 21.5 5.64744 20.3887 4.52368 19.7364C4.65336 18.4877 5.14184 16.7518 6.2149 15.2968C7.35942 13.7449 9.17431 12.5 12 12.5C14.823 12.5 16.5473 13.7416 17.5856 15.2797C18.5743 16.7444 18.9513 18.4991 18.9955 19.7505C18.0695 20.3819 15.6132 21.5 12 21.5Z"
+                                stroke="white" />
+                        </svg>
+                    </a>
+                    <a href="" class="cart sidebar-trigger" data-show="#cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4.5" y="8.5" width="15" height="13" rx="0.5" stroke="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9 10V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V10H16V6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6V10H9Z"
+                                fill="white" />
+                        </svg>
+                        <span>3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="megamenu">
+            <div class="container">
+                <ul class="megamenu__col megamenu__col1">
+                    <li>
+                        <a href="" data-cat="#cat1">
+                            Мужчинам
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-cat="#cat2">
+                            Женщинам
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-cat="#cat3">
+                            Новинки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-cat="#cat4">
+                            Бестселлеры
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-cat="#cat5">
+                            Распродажа
+                        </a>
+                    </li>
+                </ul>
+                <ul class="megamenu__col megamenu__col2 active" id="cat1">
+                    <li><a href="" data-item="#menu-cart1">Куртки</a></li>
+                    <li><a href="" data-item="#menu-cart2">Аляски</a></li>
+                    <li><a href="" data-item="#menu-cart1">Бомберы</a></li>
+                    <li><a href="" data-item="#menu-cart1">Зимние куртки</a></li>
+                    <li><a href="" data-item="#menu-cart1">Куртки с капюшоном</a></li>
+                    <li><a href="" data-item="#menu-cart2">Парки</a></li>
+                    <li><a href="" data-item="#menu-cart1">Пуховики</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col2" id="cat2">
+                    <li><a href="" data-item="#menu-cart1">Куртки</a></li>
+                    <li><a href="" data-item="#menu-cart2">Аляски</a></li>
+
+                </ul>
+                <ul class="megamenu__col megamenu__col2" id="cat3">
+
+                    <li><a href="" data-item="#menu-cart1">Парки</a></li>
+                    <li><a href="" data-item="#menu-cart2">Пуховики</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col2" id="cat4">
+
+                    <li><a href="">Зимние куртки</a></li>
+                    <li><a href="">Куртки с капюшоном</a></li>
+                    <li><a href="">Парки</a></li>
+                    <li><a href="">Пуховики</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col2" id="cat5">
+
+                    <li><a href="">Куртки с капюшоном</a></li>
+                    <li><a href="">Парки</a></li>
+                    <li><a href="">Пуховики</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col3">
+                    <li><a href="">Зима 2024</a></li>
+                    <li><a href="">Весна 2025</a></li>
+                    <li><a href="">Демисезон</a></li>
+                </ul>
+                <ul class="megamenu__col megamenu__col4 active" id="menu-cart1">
+                    <a href="" class="new-items__item">
+                        <div class="label">
+                            натуральный пух
+                        </div>
+                        <div class="new-items__img">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome080803053-ae6fe0a523-583f44a246f73af8b342b54ddbc977a9.jpeg"
+                                alt="" class="img-hover">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome220802590-d6d976dce3-2b4c15e6e34e6fad008c373b297bc32c.jpeg"
+                                alt="" class="img-main">
+
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="red color"></div>
+                            <div class="black color"></div>
+                        </div>
+
+                    </a>
+                </ul>
+                <ul class="megamenu__col megamenu__col4" id="menu-cart2">
+                    <a href="" class="new-items__item">
+                        <div class="label">
+                            натуральный пух
+                        </div>
+                        <div class="new-items__img">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome220802714-c5a7793e19-b1e2377e1f0f5e2b691a1a5d98e5962b.jpeg"
+                                alt="" class="img-hover">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome230803417-4ba13ebe5e-7da081e8132871494bfa57b52a308f1a.jpeg"
+                                alt="" class="img-main">
+
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="red color"></div>
+                            <div class="black color"></div>
+                        </div>
+
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </menu>
+
+    <div class="megamenu">
+        <div class="container">
+            <ul class="megamenu__col megamenu__col1">
+                <li>
+                    <a href="" data-cat="#cat1">
+                        Мужчинам
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-cat="#cat2">
+                        Женщинам
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-cat="#cat3">
+                        Новинки
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-cat="#cat4">
+                        Бестселлеры
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-cat="#cat5">
+                        Распродажа
+                    </a>
+                </li>
+            </ul>
+            <ul class="megamenu__col megamenu__col2 active" id="cat1">
+                <li><a href="" data-item="#menu-cart1">Куртки</a></li>
+                <li><a href="" data-item="#menu-cart2">Аляски</a></li>
+                <li><a href="" data-item="#menu-cart1">Бомберы</a></li>
+                <li><a href="" data-item="#menu-cart1">Зимние куртки</a></li>
+                <li><a href="" data-item="#menu-cart1">Куртки с капюшоном</a></li>
+                <li><a href="" data-item="#menu-cart2">Парки</a></li>
+                <li><a href="" data-item="#menu-cart1">Пуховики</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col2" id="cat2">
+                <li><a href="" data-item="#menu-cart1">Куртки</a></li>
+                <li><a href="" data-item="#menu-cart2">Аляски</a></li>
+
+            </ul>
+            <ul class="megamenu__col megamenu__col2" id="cat3">
+
+                <li><a href="" data-item="#menu-cart1">Парки</a></li>
+                <li><a href="" data-item="#menu-cart2">Пуховики</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col2" id="cat4">
+
+                <li><a href="">Зимние куртки</a></li>
+                <li><a href="">Куртки с капюшоном</a></li>
+                <li><a href="">Парки</a></li>
+                <li><a href="">Пуховики</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col2" id="cat5">
+
+                <li><a href="">Куртки с капюшоном</a></li>
+                <li><a href="">Парки</a></li>
+                <li><a href="">Пуховики</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col3">
+                <li><a href="">Зима 2024</a></li>
+                <li><a href="">Весна 2025</a></li>
+                <li><a href="">Демисезон</a></li>
+            </ul>
+            <ul class="megamenu__col megamenu__col4 active" id="menu-cart1">
+                <a href="" class="new-items__item">
+                    <div class="label">
+                        натуральный пух
+                    </div>
+                    <div class="new-items__img">
+                        <img src="https://monochrome.ru/uploads/thumbs/monochrome080803053-ae6fe0a523-583f44a246f73af8b342b54ddbc977a9.jpeg"
+                            alt="" class="img-hover">
+                        <img src="https://monochrome.ru/uploads/thumbs/monochrome220802590-d6d976dce3-2b4c15e6e34e6fad008c373b297bc32c.jpeg"
+                            alt="" class="img-main">
+
+                        <button class="addToCart">добавить в корзину</button>
+                    </div>
+                    <p>Куртка LAPLANGER Берген пуховая</p>
+                    <div class="price">52 000 Р</div>
+                    <div class="new-items__colors row">
+                        <div class="red color"></div>
+                        <div class="black color"></div>
+                    </div>
+
+                </a>
+            </ul>
+            <ul class="megamenu__col megamenu__col4" id="menu-cart2">
+                <a href="" class="new-items__item">
+                    <div class="label">
+                        натуральный пух
+                    </div>
+                    <div class="new-items__img">
+                        <img src="https://monochrome.ru/uploads/thumbs/monochrome220802714-c5a7793e19-b1e2377e1f0f5e2b691a1a5d98e5962b.jpeg"
+                            alt="" class="img-hover">
+                        <img src="https://monochrome.ru/uploads/thumbs/monochrome230803417-4ba13ebe5e-7da081e8132871494bfa57b52a308f1a.jpeg"
+                            alt="" class="img-main">
+
+                        <button class="addToCart">добавить в корзину</button>
+                    </div>
+                    <p>Куртка LAPLANGER Берген пуховая</p>
+                    <div class="price">52 000 Р</div>
+                    <div class="new-items__colors row">
+                        <div class="red color"></div>
+                        <div class="black color"></div>
+                    </div>
+
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="left-sidebar cart-sidebar empty" id="cart">
+        <div class="close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 19L19 5" stroke="black" />
+                <path d="M19 19L5 5" stroke="black" />
+            </svg>
+
+        </div>
+        <div class="left-sidebar__wrapper">
+            <div class="cart-sidebar__container">
+                <div class="left-sidebar__title">
+                    Корзина <span>2</span>
+                </div>
+                <p>В корзине пока нет товаров</p>
+            </div>
+            <div class="cart-sidebar__bottom">
+
+                <a href="" class="btn-prod">
+                    Перейти в каталог
+                </a>
+
+            </div>
+        </div>
+        <div class="back"></div>
+    </div>
+
+    <div class="searching">
+        <form class="searching__top row">
+            <label class="searching__top__left">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.5" cy="10.5" r="7" stroke="black" />
+                    <path d="M15.5 15.5L21 21" stroke="black" />
+                </svg>
+
+                <input type="search" placeholder="название товара или категории">
+            </label>
+            <div class="searching__top__right close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 20L20 4" stroke="black" />
+                    <path d="M20 20L4 4" stroke="black" />
+                </svg>
+
+            </div>
+        </form>
+
+        <div class="searching__body empty row">
+            <ul class="searching__menu">
+                <li class="title">
+                    Часто ищут
+                </li>
+                <li>
+                    <a href="">Часто ищут</a>
+                </li>
+                <li>
+                    <a href="">
+                        Парка
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        новинки
+                    </a>
+                </li>
+            </ul>
+            <div class="searching__body__feed">
+                <span class="subtitle">Популярные товары</span>
+                <div class="new-items__tab">
+                    <a href="" class="new-items__item">
+                        <div class="new-items__img">
+                            <video playsinline="" loop="true" muted="" autoplay="">
+                                <source src="https://monochrome.ru/uploads/products/1starlook5-3f3bc7bbe2.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="cyan color"></div>
+                            <div class="grey color"></div>
+                        </div>
+
+                    </a>
+                    <a href="" class="new-items__item">
+                        <div class="label">
+                            натуральный пух
+                        </div>
+                        <div class="new-items__img">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome220802590-d6d976dce3-2b4c15e6e34e6fad008c373b297bc32c.jpeg"
+                                alt="" class="img-main">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome080803053-ae6fe0a523-583f44a246f73af8b342b54ddbc977a9.jpeg"
+                                alt="" class="img-hover">
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="red color"></div>
+                            <div class="black color"></div>
+                        </div>
+
+                    </a>
+                    <a href="" class="new-items__item">
+                        <div class="new-items__img">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome220802714-c5a7793e19-b1e2377e1f0f5e2b691a1a5d98e5962b.jpeg"
+                                alt="" class="img-main">
+                            <img src="https://monochrome.ru/uploads/thumbs/monochrome230803417-4ba13ebe5e-7da081e8132871494bfa57b52a308f1a.jpeg"
+                                alt="" class="img-hover">
+                            <button class="addToCart">добавить в корзину</button>
+                        </div>
+                        <p>Куртка LAPLANGER Берген пуховая</p>
+                        <div class="price">52 000 Р</div>
+                        <div class="new-items__colors row">
+                            <div class="cyan color"></div>
+                            <div class="grey color"></div>
+                        </div>
+
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="contacts">
+	<div class="container">
+		<div class="contacts__left">
+			<h1>Контакты</h1>
+			<span class="descr">Свяжитесь с нами</span>
+			<a href="" class="tel">8 800 888 8888</a>
+			<a href="" class="link">support@bergen.ru</a>
+			<a href="" class="link">Telegram</a>
+			<a href="" class="link">WhatsApp</a>
+			<a href="" class="link">Написать нам</a>
+			<div class="contacts__req">
+				<span>Реквизиты</span>
+				<p>
+					ООО «Bergen»ОГРН: <br>5177746207887Юр. адрес: <br>127006, город Москва,ул. <br>Каретный Ряд, д. 8, этаж
+					1, помещ. III
+				</p>
+			</div>
+		</div>
+		<div class="contacts__right">
+			<div class="contacts__address">
+				<div class="descr">
+					Головной офис
+				</div>
+				<div class="swiper-container-contact new-items__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="assets/img/bg3.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="assets/img/bg3.png" alt="">
+						</div>
+					</div>
+					<div class="header__pag"></div>
+				</div>
+				<div class="contacts__text">
+					Москва, Гольяновская ул, д. 3а, к. 3,помещ. VI, ком. 1, офис 12/9
+				</div>
+				<p>
+					Режим работы — с 10:00 до 22:00, ежедневно
+				</p>
+				<p>
+					<a href="">
+						Открыть в Яндекс Картах
+
+					</a>
+				</p>
+
+			</div>
+			<div class="contacts__address">
+				<div class="descr">
+					Головной офис
+				</div>
+				<div class="swiper-container-contact new-items__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="assets/img/bg3.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="assets/img/bg3.png" alt="">
+						</div>
+					</div>
+					<div class="header__pag"></div>
+				</div>
+				<div class="contacts__text">
+					Москва, Гольяновская ул, д. 3а, к. 3,помещ. VI, ком. 1, офис 12/9
+				</div>
+				<p>
+					Режим работы — с 10:00 до 22:00, ежедневно
+				</p>
+				<p>
+					<a href="">
+						Открыть в Яндекс Картах
+
+					</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top row">
+            <div class="footer__top__left">
+                Подпишитесь на нашу e-mail рассылку, чтобы первыми увидеть новые коллекции, новости и видео
+            </div>
+            <form class="footer__top__right">
+                <input type="text" placeholder="введите e-mail">
+                <button>подписаться</button>
+            </form>
+            <li class="last"><a href="">правила использования</a></li>
+            <li class="last"><a href="">политика</a></li>
+            <li class="last">
+                © bergen 2016—2024
+            </li>
+        </div>
+        <div class="footer__row row">
+            <ul class="footer__col">
+                <li>Магазин</li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">О bergen</a></li>
+                <li><a href="">Офлайн магазины</a></li>
+                <li><a href="">блог</a></li>
+                <li><a href="">Sustainability</a></li>
+                <li><a href="">Реквизиты</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="">Контакты</a></li>
+                <li class="last"><a href="">правила использования</a></li>
+            </ul>
+            <ul class="footer__col">
+                <li>Магазин</li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">О bergen</a></li>
+                <li><a href="">Офлайн магазины</a></li>
+                <li><a href="">блог</a></li>
+                <li><a href="">Sustainability</a></li>
+                <li><a href="">Реквизиты</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="">Контакты</a></li>
+                <li class="last"><a href="">Политика конфиденциальности</a></li>
+            </ul>
+            <ul class="footer__col">
+                <li>Быстрая связь</li>
+                <li><a href="">+7 499 112 03 30</a></li>
+                <li><a href="">Telegram</a></li>
+                <li><a href="">WhatsApp</a></li>
+                <li><a href="">info@bergen.ru</a></li>
+            </ul>
+            <ul class="footer__last">
+                <li class="footer__logo">
+                    <svg width="107" height="95" viewBox="0 0 107 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_25_20)">
+                            <path
+                                d="M48.7519 27.5029C48.7519 26.9781 49.1049 26.6981 49.5285 26.8381C49.5991 26.8731 49.6344 26.9431 49.6697 26.9781C49.6344 27.013 49.5638 27.083 49.5285 27.083C49.2108 27.048 49.0696 27.223 49.0343 27.5029C49.0343 27.5729 48.9284 27.6079 48.8931 27.6429C48.8578 27.6079 48.7872 27.5379 48.7519 27.5029Z"
+                                fill="black" />
+                            <path
+                                d="M48.7872 27.4677C48.7872 26.9778 48.999 26.7678 49.3873 26.8378C49.4579 26.8378 49.5285 26.9428 49.6344 26.9778C49.5638 27.0128 49.4932 27.0478 49.4226 27.1178C49.3167 27.2227 49.1755 27.3277 49.0696 27.4327C48.999 27.5027 48.9637 27.6076 48.8931 27.6776C48.8931 27.5726 48.8225 27.4677 48.7872 27.4677Z"
+                                fill="black" />
+                            <path
+                                d="M49.6698 27.0128C49.6698 27.5027 49.3873 27.7477 49.0343 27.6777C48.9637 27.6777 48.8931 27.5727 48.8225 27.5377C48.8931 27.5027 48.9637 27.4327 49.0343 27.3977C49.1402 27.2928 49.2814 27.1528 49.3873 27.0478C49.4579 26.9779 49.5285 26.9079 49.5638 26.8379C49.5991 26.9079 49.6345 26.9779 49.6698 27.0128Z"
+                                fill="black" />
+                            <path
+                                d="M48.8225 27.4679C49.2814 27.4679 49.4579 27.2229 49.3873 26.7681C49.4579 26.7681 49.4932 26.7681 49.5638 26.8031C49.5991 26.978 49.6698 27.188 49.6698 27.3629C49.6698 27.4679 49.5285 27.6778 49.4226 27.6778C49.2461 27.7128 49.0343 27.6428 48.8578 27.6078C48.8225 27.5729 48.8225 27.5379 48.8225 27.4679Z"
+                                fill="black" />
+                            <path
+                                d="M66.3675 27.2229C65.1673 24.4586 63.614 21.9043 61.8489 19.4899C60.8957 18.2302 59.9426 17.0056 58.9541 15.7809C58.9188 15.7109 56.8713 12.3868 55.3181 9.41257C55.2121 9.16763 55.1062 8.99268 55.0709 8.9227C54.0472 6.75327 52.7763 4.7238 51.0818 3.00925L51.0465 2.90428L50.9759 2.86929C48.5048 0.419934 45.5394 -0.489827 42.0798 0.24498C39.9617 0.69986 37.8789 0.69986 35.7608 0.349952C34.9489 0.209989 34.1016 0.174999 33.2544 0.209989C32.4777 0.209989 31.7364 0.454925 31.0657 0.944796C31.9835 1.18973 32.8661 1.39968 33.7486 1.60962C35.3019 1.99452 36.714 2.69434 37.7377 3.91901C39.4322 5.98347 40.5972 8.29286 40.9502 10.9522C41.162 12.5967 40.9502 14.2063 40.3501 15.7459C39.8205 17.1105 39.1498 18.4052 38.585 19.7698C37.7377 21.7293 36.9611 23.6888 36.4315 25.7883C35.902 27.7827 35.6549 29.8122 35.6196 31.8767C35.6196 33.5562 35.6549 35.2708 35.7608 36.9503C35.8667 38.4549 36.0079 39.9945 36.2903 41.4991C36.6081 43.2837 36.4668 44.9982 35.9373 46.7128C35.1607 49.1271 33.7486 51.0516 31.6305 52.5212C31.454 52.6612 31.2775 52.8012 30.9951 52.9761C33.4309 53.1861 36.3256 52.3463 38.2319 51.0516C38.3731 51.4365 38.5497 51.7864 38.7262 52.1363C39.5734 53.6409 40.809 54.5157 42.6094 54.4807C44.5863 54.4457 46.5279 54.4807 48.5048 54.4807C48.646 54.4807 48.8225 54.4807 49.0696 54.4807C48.1871 52.9411 46.9515 51.9964 45.2923 51.5415C45.5041 50.9816 45.6806 50.4568 45.8924 49.9669C46.5985 48.5673 47.6222 47.7625 49.1402 47.9024C50.4464 48.0424 51.5407 48.6023 51.8585 50.0719C51.9997 50.6317 52.1762 51.1916 52.2821 51.7864C52.5998 53.326 54.2237 54.4807 55.6711 54.4457C57.7892 54.4107 59.872 54.4457 61.9901 54.4457C62.096 54.4457 62.2019 54.4457 62.3784 54.4107C61.037 52.3463 59.2013 51.0516 56.8713 50.3518C61.2841 44.5083 63.1198 38.035 62.3784 30.722C63.5787 32.2965 64.4259 33.9411 65.0614 35.7606C65.3085 36.4255 66.191 36.5654 66.5794 35.9706C67.0736 35.2358 67.2854 34.396 67.3913 33.5212C67.6384 31.3168 67.2148 29.2174 66.3675 27.2229ZM45.7512 2.34443C46.6338 2.37942 47.3398 3.2192 47.3045 4.23393C47.2692 5.24866 46.5279 6.01846 45.61 6.01846C44.7275 5.98347 44.0215 5.14369 44.0568 4.12896C44.1274 3.11423 44.8687 2.34443 45.7512 2.34443ZM59.3778 37.2652C58.9894 38.9098 58.3187 40.4144 57.1537 41.6741C54.9297 44.0185 52.2115 45.0332 48.999 44.6133C46.2808 44.2284 44.198 42.8638 42.6447 40.6593C42.0445 39.7846 41.7268 38.8048 41.3385 37.8601C40.4913 35.8306 39.9617 33.7312 39.8558 31.5617C39.7499 29.6023 39.9617 27.6428 40.4913 25.7533C40.6325 25.1584 40.8796 24.5986 41.0914 23.9687C42.6447 25.1934 44.1274 27.1179 44.9393 28.7625C45.7159 30.3371 46.2455 31.9466 46.422 33.6962C46.5985 35.1308 46.6338 36.5654 46.3161 38C46.2102 38.3849 46.2102 38.8048 46.2808 39.2247C46.422 39.9595 47.0574 40.2395 47.6928 39.8546C48.1871 39.5396 48.7166 39.1897 49.1049 38.7698C50.7641 36.9503 51.4348 34.7459 51.5761 32.3665C51.682 30.477 51.682 28.5875 51.3642 26.733C51.0112 24.8085 50.6935 22.884 50.3052 20.9595C49.9522 19.245 49.4226 17.5654 49.0696 15.8509C48.7872 14.6612 48.7519 13.4365 48.999 12.2468C49.4932 10.0774 51.223 9.02767 53.2705 9.62251C53.2705 9.62251 54.5414 10.0074 57.0831 14.9061C57.1891 15.0811 57.295 15.291 57.4009 15.466L58.8129 18.0203C58.8129 18.0203 58.8129 18.0203 59.0247 18.5802C59.8367 20.7496 60.0838 23.094 60.2956 25.4384C60.6133 29.3573 60.2956 33.3113 59.3778 37.2652Z"
+                                fill="black" />
+                            <path
+                                d="M46.7529 4.44767C46.8426 3.9728 46.6046 3.53017 46.2214 3.45902C45.8381 3.38786 45.4547 3.71513 45.3649 4.18999C45.2752 4.66485 45.5132 5.10749 45.8964 5.17864C46.2797 5.24979 46.6631 4.92253 46.7529 4.44767Z"
+                                fill="black" />
+                            <path
+                                d="M0 88.7365V67.707H4.23623V88.7365H0ZM3.07126 88.7365V85.2724H9.00198C10.1669 85.2724 10.9789 85.0625 11.4731 84.5726C11.9673 84.1177 12.2145 83.4529 12.2145 82.6131V82.2282C12.2145 81.3534 11.9673 80.6886 11.4731 80.2687C10.9789 79.8138 10.1316 79.6039 8.93138 79.6039H3.03596V76.3847H8.82547C9.91983 76.3847 10.6965 76.1748 11.1554 75.7199C11.6143 75.265 11.8614 74.6352 11.8614 73.8304V73.6205C11.8614 72.8157 11.6496 72.1859 11.1907 71.766C10.7318 71.3461 9.95513 71.1361 8.82547 71.1361H3.00066V67.742H9.28439C11.7555 67.742 13.5206 68.1619 14.5797 69.0367C15.6387 69.9115 16.2036 71.1711 16.2036 72.8157V73.0956C16.2036 74.3553 15.8858 75.3 15.2504 75.9998C14.615 76.6997 13.6618 77.0846 12.3204 77.2245V77.3995C13.803 77.6444 14.8974 78.1693 15.5681 78.9741C16.2389 79.7789 16.5919 80.9336 16.5919 82.4032V82.963C16.5919 84.8525 16.0271 86.2871 14.8974 87.3019C13.7677 88.3166 11.9673 88.8065 9.49621 88.8065H3.07126V88.7365Z"
+                                fill="black" />
+                            <path
+                                d="M27.3236 89.1214C24.5348 89.1214 22.452 88.4916 21.1105 87.1969C19.7337 85.9373 19.063 84.0827 19.063 81.6684V79.5689C19.063 77.1896 19.6984 75.335 20.9693 74.0754C22.2402 72.7807 24.0759 72.1509 26.5117 72.1509C28.1356 72.1509 29.5123 72.4308 30.6067 72.9907C31.7011 73.5505 32.513 74.3553 33.0778 75.405C33.6427 76.4547 33.8898 77.7144 33.8898 79.149V79.7089C33.8898 80.0938 33.8545 80.5137 33.8192 80.9336C33.7839 81.3535 33.7133 81.7384 33.678 82.0883H29.8301C29.8654 81.4934 29.8654 80.8986 29.9007 80.3737C29.9007 79.8139 29.9007 79.324 29.9007 78.9041C29.9007 78.1343 29.7948 77.5045 29.5476 76.9796C29.3005 76.4547 28.9475 76.0349 28.4533 75.7549C27.9591 75.475 27.3236 75.335 26.547 75.335C25.4173 75.335 24.5701 75.65 24.0406 76.2798C23.511 76.9096 23.2286 77.7844 23.2286 78.9391V80.4437V80.9336V82.1932C23.2286 82.6831 23.2992 83.173 23.4757 83.5929C23.6522 84.0128 23.8993 84.3977 24.2877 84.7126C24.676 85.0275 25.1702 85.2724 25.8056 85.4474C26.4411 85.6223 27.2177 85.7273 28.1709 85.7273C29.1946 85.7273 30.1478 85.6223 31.0656 85.3774C31.9835 85.1675 32.866 84.8525 33.678 84.4676L33.3249 87.7918C32.5836 88.2117 31.7011 88.5266 30.7126 88.7365C29.6536 89.0164 28.5592 89.1214 27.3236 89.1214ZM21.3223 82.1582V79.359H32.8307V82.1582H21.3223Z"
+                                fill="black" />
+                            <path
+                                d="M36.8904 88.7365V72.6058H40.9502L40.7736 77.5395L41.162 77.6794V88.7015H36.8904V88.7365ZM41.0208 79.359L39.9264 76.5597H40.9502C41.2326 75.2651 41.7974 74.2154 42.574 73.4805C43.3507 72.7457 44.445 72.3608 45.8571 72.3608C46.1395 72.3608 46.422 72.3958 46.6338 72.4308C46.8809 72.4658 47.0927 72.5008 47.2692 72.5708L47.5163 76.7697C47.2692 76.6997 46.9868 76.6297 46.6691 76.5947C46.3513 76.5597 45.9983 76.5247 45.6453 76.5247C44.5156 76.5247 43.5625 76.7697 42.7506 77.2596C41.9739 77.7844 41.4091 78.4842 41.0208 79.359Z"
+                                fill="black" />
+                            <path
+                                d="M56.0594 94.9998C54.4708 94.9998 53.1293 94.8599 52.035 94.6149C50.9053 94.37 50.0581 93.9501 49.4579 93.3903C48.8578 92.8304 48.5754 92.0956 48.5754 91.1859V91.1159C48.5754 90.486 48.7166 89.9612 48.999 89.5413C49.2814 89.1214 49.6697 88.7715 50.164 88.5266C50.6582 88.2816 51.2583 88.1067 51.9291 88.0367V87.8617C51.0818 87.6868 50.4464 87.4418 50.0228 87.0569C49.5991 86.672 49.3873 86.1472 49.3873 85.5173C49.3873 85.0625 49.4932 84.6776 49.705 84.3626C49.9168 84.0477 50.2346 83.8028 50.6582 83.5928C51.0818 83.4179 51.576 83.3129 52.1762 83.2779V82.7881L55.777 83.6278L54.612 83.5928C54.1178 83.5928 53.7648 83.6628 53.5529 83.8028C53.3411 83.9428 53.2705 84.1177 53.2705 84.3277C53.2705 84.6076 53.4117 84.8175 53.7294 84.9575C54.0472 85.0975 54.5414 85.2024 55.2827 85.2724L59.1659 85.6923C61.0016 85.9022 62.3431 86.3571 63.1904 87.0219C64.0729 87.6868 64.4965 88.7365 64.4965 90.1711V90.2411C64.4965 91.3258 64.1788 92.2006 63.5787 92.9004C62.9432 93.6002 62.0607 94.1251 60.8957 94.44C59.7308 94.7899 58.3187 94.9299 56.6595 94.9299H56.0594V94.9998ZM56.483 83.8028C54.0119 83.8028 52.1409 83.3129 50.87 82.3332C49.5991 81.3534 48.9637 79.9888 48.9637 78.2393V77.9943C48.9637 76.8396 49.2108 75.8599 49.7403 75.0201C50.2346 74.2153 51.0465 73.5505 52.1409 73.0956C53.2352 72.6407 54.612 72.3608 56.3418 72.2908L64.9201 71.9409V75.0201L60.5074 74.8451V75.0201C61.2134 75.1601 61.7783 75.405 62.2372 75.7199C62.6961 76.0348 63.0491 76.4197 63.261 76.9096C63.5081 77.3995 63.614 77.9943 63.614 78.6941V78.8341C63.614 80.4087 63.0138 81.6334 61.8489 82.4731C60.6839 83.3829 58.8835 83.8028 56.483 83.8028ZM56.3065 91.8157H56.7654C57.6127 91.8157 58.354 91.7457 58.9188 91.6407C59.4837 91.5358 59.9073 91.3608 60.1897 91.1159C60.4721 90.8709 60.6133 90.591 60.6133 90.2061V90.1711C60.6133 89.7162 60.4368 89.3663 60.0838 89.1564C59.7308 88.9464 59.1306 88.8065 58.354 88.7365L53.5882 88.2816L54.5767 88.2466C54.1531 88.3166 53.8001 88.4216 53.4823 88.5965C53.1646 88.7365 52.9175 88.9464 52.741 89.1914C52.5645 89.4363 52.4586 89.7162 52.4586 90.0661V90.1011C52.4586 90.521 52.5998 90.8359 52.8822 91.1159C53.1646 91.3958 53.5882 91.5708 54.1884 91.7107C54.7532 91.7457 55.4592 91.8157 56.3065 91.8157ZM56.3771 80.8636C57.1184 80.8636 57.7186 80.7586 58.2128 80.5486C58.707 80.3387 59.06 80.0238 59.3071 79.6389C59.5543 79.219 59.6955 78.7291 59.6955 78.1693V77.9943C59.6955 77.3995 59.5896 76.9096 59.3425 76.5247C59.0953 76.1398 58.7423 75.8249 58.2481 75.615C57.7539 75.405 57.1537 75.3 56.4124 75.3H56.3771C55.6004 75.3 54.965 75.405 54.4355 75.615C53.9413 75.8249 53.5882 76.1398 53.3411 76.5247C53.094 76.9096 52.9881 77.3995 52.9881 77.9593V78.1343C52.9881 78.7291 53.1293 79.219 53.3764 79.6039C53.6235 79.9888 54.0119 80.3037 54.5061 80.5137C55.0003 80.7586 55.6358 80.8636 56.3771 80.8636Z"
+                                fill="black" />
+                            <path
+                                d="M74.4517 89.1214C71.6628 89.1214 69.58 88.4916 68.2386 87.1969C66.8618 85.9373 66.191 84.0827 66.191 81.6684V79.5689C66.191 77.1896 66.8265 75.335 68.0973 74.0754C69.3682 72.7807 71.2039 72.1509 73.6397 72.1509C75.2636 72.1509 76.6404 72.4308 77.7348 72.9907C78.8291 73.5505 79.6411 74.3553 80.2059 75.405C80.7707 76.4547 81.0178 77.7144 81.0178 79.149V79.7089C81.0178 80.0938 80.9825 80.5137 80.9472 80.9336C80.9119 81.3535 80.8413 81.7384 80.806 82.0883H76.9581C76.9934 81.4934 76.9934 80.8986 77.0287 80.3737C77.064 79.8489 77.0287 79.324 77.0287 78.9041C77.0287 78.1343 76.9228 77.5045 76.6757 76.9796C76.4286 76.4547 76.0756 76.0349 75.5813 75.7549C75.0871 75.475 74.4517 75.335 73.675 75.335C72.5454 75.335 71.6981 75.65 71.1686 76.2798C70.6391 76.9096 70.3567 77.7844 70.3567 78.9391V80.4437V80.9336V82.1932C70.3567 82.6831 70.4273 83.173 70.6038 83.5929C70.7803 84.0128 71.0274 84.3977 71.4157 84.7126C71.804 85.0275 72.2983 85.2724 72.9337 85.4474C73.5691 85.6223 74.3458 85.7273 75.2989 85.7273C76.3227 85.7273 77.2758 85.6223 78.1937 85.3774C79.1115 85.1675 79.9941 84.8525 80.806 84.4676L80.453 87.7918C79.7117 88.2117 78.8291 88.5266 77.8407 88.7365C76.7816 89.0164 75.6519 89.1214 74.4517 89.1214ZM68.4504 82.1582V79.359H79.9588V82.1582H68.4504Z"
+                                fill="black" />
+                            <path
+                                d="M84.0184 88.7365V72.6058H88.2547L88.0781 76.5247L88.2547 76.8746V88.7365H84.0184ZM94.609 88.7365V79.0441C94.609 78.3792 94.5031 77.7844 94.3266 77.2945C94.1501 76.8047 93.8324 76.4198 93.4087 76.1398C92.9851 75.8599 92.4203 75.7199 91.6789 75.7199C91.0435 75.7199 90.4787 75.8249 89.9844 76.0699C89.4902 76.3148 89.1019 76.5947 88.8195 77.0146C88.5018 77.3995 88.29 77.8544 88.1135 78.3443L87.4427 76.0349H88.2547C88.4312 75.3351 88.7136 74.6702 89.1372 74.1104C89.5608 73.5505 90.1257 73.0956 90.8317 72.7457C91.5377 72.3958 92.4556 72.2559 93.5146 72.2559C94.7502 72.2559 95.774 72.5008 96.5506 72.9557C97.3272 73.4106 97.8921 74.1104 98.2804 75.0201C98.6687 75.9299 98.8452 77.0846 98.8452 78.4492V88.7365H94.609Z"
+                                fill="black" />
+                            <path
+                                d="M105.588 69.562C106.047 69.7719 106.365 70.0868 106.612 70.4717C106.859 70.8566 106.965 71.3115 106.965 71.8364V71.9764C106.965 72.5012 106.859 72.9561 106.612 73.341C106.365 73.7259 106.012 74.0408 105.588 74.2508C105.129 74.4607 104.635 74.5657 104.035 74.5657C103.117 74.5657 102.411 74.3207 101.881 73.8659C101.352 73.411 101.069 72.7462 101.069 71.9764V71.8364C101.069 71.3115 101.175 70.8566 101.422 70.4717C101.669 70.0868 102.022 69.7719 102.446 69.562C102.905 69.352 103.399 69.2471 103.999 69.2471C104.635 69.2471 105.129 69.352 105.588 69.562ZM106.365 71.8364C106.365 71.2066 106.153 70.6817 105.729 70.3318C105.306 69.9469 104.741 69.7719 103.999 69.7719C103.258 69.7719 102.693 69.9469 102.27 70.3318C101.846 70.7167 101.634 71.2066 101.634 71.8364V72.0113C101.634 72.6412 101.846 73.1311 102.27 73.516C102.693 73.9009 103.258 74.0758 103.999 74.0758C104.741 74.0758 105.306 73.9009 105.729 73.516C106.153 73.1311 106.365 72.6412 106.365 72.0113V71.8364ZM105.27 70.8217C105.447 70.9616 105.517 71.1366 105.517 71.4165V71.5215C105.517 71.7314 105.447 71.9064 105.306 72.0463C105.164 72.1863 104.988 72.2913 104.741 72.3263L105.482 73.201V73.236H104.847L104.07 72.3263H103.329V73.236H102.729V70.6467H104.564C104.847 70.6117 105.094 70.6817 105.27 70.8217ZM104.882 71.3815C104.882 71.2765 104.847 71.1716 104.741 71.1016C104.635 71.0316 104.529 70.9966 104.352 70.9966H103.293V71.8364H104.352C104.529 71.8364 104.635 71.8014 104.741 71.7314C104.847 71.6614 104.882 71.5565 104.882 71.4515V71.3815Z"
+                                fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_25_20">
+                                <rect width="107" height="95" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </li>
+                <li>
+                    bergen — lifestyle бренд, активно популяризующий моду на оверсайз и использующий этот формат в
+                    качестве
+                    ключевого направления в создании своих коллекций.
+                </li>
+                <li>© bergen 2016—2024</li>
+            </ul>
+        </div>
+        <div class="footer__svg">
+            <svg width="1408" height="266" viewBox="0 0 1408 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0.200002 357V8.99999H152.84C230.6 8.99999 288.68 26.28 288.68 101.16C288.68 129.96 281 151.08 261.32 168.84C285.8 183.72 301.64 207.72 301.64 246.12C301.64 325.32 244.52 357 159.08 357H0.200002ZM100.52 215.88V275.88H161.96C184.52 275.88 197 262.92 197 246.12C197 228.84 184.52 215.88 161.96 215.88H100.52ZM100.52 90.12V146.28H155.72C174.92 146.28 185.48 133.32 185.48 118.44C185.48 103.56 174.92 90.12 155.72 90.12H100.52ZM556.869 357L487.269 234.6H445.989V357H345.669V8.99999H489.669C580.869 8.99999 649.029 31.08 649.029 120.84C649.029 170.76 623.589 200.04 587.109 216.84L669.669 357H556.869ZM501.189 90.12H445.989V158.76H501.189C530.469 158.76 544.389 144.36 544.389 124.68C544.389 105 530.469 90.12 501.189 90.12ZM861.725 84.84C815.645 84.84 787.325 120.84 787.325 180.84C787.325 239.4 812.285 279.24 863.165 279.24C907.325 279.24 927.485 253.32 927.485 234.6V234.12H852.125V158.28H1024.93V357H946.685L946.205 320.04C925.085 350.28 888.605 363.24 845.885 363.24C746.045 363.24 682.685 291.72 682.685 180.84C682.685 70.92 750.365 0.839979 860.285 0.839979C937.565 0.839979 1003.81 36.36 1023.01 119.88H924.605C918.365 100.2 898.685 84.84 861.725 84.84ZM1407.46 357H1283.62L1177.06 135.24V357H1084.42V8.99999H1207.78L1314.82 230.28V8.99999H1407.46V357Z"
+                    fill="black" />
+            </svg>
+
+        </div>
+    </div>
+</footer>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/MotionPathPlugin.min.js"></script>
+
+<!-- Swiper -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

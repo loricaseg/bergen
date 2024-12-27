@@ -1,0 +1,396 @@
+@media screen and ( max-width: 980px)
+	.menu__left
+		a
+			display: none
+	.menu__logo
+		position: relative
+		margin-left: 20px
+		transform: none
+		left: auto
+		top: auto
+	.menu
+		width: 100%
+		padding: 24px 0
+	.menu__right
+		margin-left: auto
+		.menu__city
+			display: none
+		a
+			display: none
+		.cart
+			display: flex
+	.megamenu
+		.container
+			grid-template-columns: repeat(1, 1fr)
+		.new-items__item
+			max-width: 350px
+		&__col
+			padding-bottom: 20px
+			&:not(:last-child)
+				border-bottom: 1px solid rgba(0,0,0,.1)
+	.header
+		.header__prev, .header__next
+			display: none
+	.tech__title
+		font-size: 40px
+	.tech__left
+		width: 100%
+		position: relative
+	.tech__right
+		margin-left: 0
+	.new-items__selectors
+		overflow: hidden
+		.swiper-wrapper
+			justify-content: flex-start
+			gap: 0
+			margin-bottom: 48px
+		a
+			margin-left: 20px
+			width: auto
+	.collections
+		margin-bottom: 60px
+		.container
+			flex-direction: column
+		.collections__left, .collections__right
+			width: 100%
+			border: none
+			gap: 20px
+			text-align: center
+			flex-direction: column
+			img
+				height: 370px
+				object-fit: cover
+				object-position: top center
+				margin: 0
+		.collections__back
+			display: none
+		.collections__left
+
+			gap: 20px
+			text-align: center
+		.collections__right
+			flex-direction: column-reverse
+			.collections__text
+				text-align: center
+				margin: 0
+	.new-items__tab
+		display: grid
+		grid-gap: 20px 0
+		grid-template-columns: repeat(2, 1fr )
+		.new-items__item
+			width: 100%
+	.new-items__img
+		height: 50vh
+	.new-items
+		margin-bottom: 60px
+	.tech-desc
+		display: none
+		.container
+			flex-direction: column
+	.tech-mob
+		margin-bottom: 60px
+		display: block
+		&__item
+			padding: 24px 0
+			&:not(:last-child)
+				border-bottom: 1px solid rgba(0,0,0,.1)
+			video
+				object-fit: cover
+				height: 223px
+				width: 100%
+		.tech__title
+			font-size: 40px
+			font-style: normal
+			font-weight: 400
+			opacity: 1
+			margin: 16px 0
+		.tech__text
+			display: block
+			line-height: 130%
+			opacity: .5
+			font-size: 16px
+			font-style: normal
+			font-weight: 400
+	.hood
+		display: none
+	.live__wrapper
+		flex-direction: column
+		.live__link2
+			margin-top: 32px
+		.live__col2
+			margin-top: 32px
+	.live__col
+		width: 100%!important
+		max-width: 460px!important
+		img
+			width: 100%
+			margin-bottom: 16px!important
+	.live
+		.live__link1
+			margin-top: -15px
+			margin-bottom: 32px
+	.live__wrapper
+		gap: 0
+	.live__wrapper .live__link2
+		margin-bottom: 0
+	.live .live-btn
+		display: none
+	.footer__row
+		flex-direction: column
+	.footer__last
+		order: 1
+		width: 100%
+		padding: 40px 0
+		display: flex
+		flex-direction: column
+		gap: 40px
+		padding-bottom: 20px
+		border-bottom: 1px solid rgba(0,0,0,.1)
+	.footer
+		.container
+			padding: 0 4vw
+			display: flex
+			flex-direction: column
+	.footer__col
+		width: 100%
+		order: 2
+	.footer__top
+		order: 2
+		flex-direction: column
+	.footer__top__left
+		width: 100%
+		margin-bottom: 20px
+	.footer__top__right
+		flex-direction: column
+		width: 100%
+		gap: 20px
+		input
+			padding-right: 20px
+		button
+			margin: 0
+	.footer__svg
+		order: 3
+	.footer__col
+		padding-top: 20px
+		border-bottom: 1px solid rgba(0,0,0,.1)
+		.last
+			display: none
+	.footer__top
+		align-items: flex-start
+		.last
+			display: block!important
+			opacity: 0.5
+			text-transform: uppercase
+			text-align: left
+			font-size: 14px
+			margin-top: 20px
+	.footer__col li:last-child
+		margin-top: 0
+		margin-bottom: 20px
+	.catalog__col1
+		grid-template-columns: repeat(1, 1fr)
+	.catalog__img
+		height: 400px
+		img
+			width: 100%
+	.catalog__col3, .catalog__col2, .catalog__col4
+		grid-template-columns: repeat(1, 1fr)
+	.new-items__title
+		font-size: 32px
+		margin-bottom: 20px
+	.catalog-items
+		.new-items__selectors
+			flex-wrap: wrap
+			.swiper-wrapper
+				width: 100%
+				margin: 0
+				margin-bottom: 20px
+				order: 1
+			.filters
+				order: 2
+			.sort
+				order: 3
+	.catalog-items .new-items__tab
+		grid-template-columns: repeat(2, 1fr)
+	.live-header h1
+		font-size: 36px
+	.article .article__row
+		flex-direction: column
+	.article .swiper-container-article
+		display: none
+	article
+		padding: 0 4vw
+	.article__list span
+		flex-shrink: 0
+	.live-container__col:nth-child(odd) a:first-child
+		width: 100%
+	.live-container__col a
+		width: 100%!important
+	.live-container__col
+		flex-direction: column
+	.live-container__col a img
+		height: 400px!important
+	.live-container__col a p
+		font-size: 20px!important
+	.live-container__col a span
+		font-size: 14px!important
+	.live-container__col a
+		margin-bottom: 32px
+	.live-container__col
+		margin-bottom: 0
+	.product
+		flex-direction: column
+		gap: 20px
+	.product__left
+		width: 100%
+	.product__left__desc
+		display: none
+	.product__right
+		width: 100%
+		padding: 0 4vw
+	.product__prefs
+		grid-template-columns: repeat(2, 1fr)
+	.product-mob
+		overflow: hidden
+		display: block
+		img, video
+			width: 100%
+	.product__right
+		padding-top: 0
+		h1
+			font-size: 24px
+	.product__price
+		font-size: 24px
+	.left-sidebar
+		width: 100%
+		top: 0
+		&__wrapper
+			width: 100%
+			margin: 0
+			height: fit-content
+			min-height: 100vh
+			padding: 28px 4vw
+		.close
+			position: absolute
+			right: 0
+			background: none
+			margin: 0
+			top: 12px
+		&__title
+			font-size: 20px
+			border-bottom: 1px solid rgba(0,0,0,.1)
+			padding-bottom: 28px
+			margin-bottom: 20px
+	.cart-sidebar__items__title
+		flex-direction: column
+		.price
+			margin: 0
+			text-align: left
+	.cart-sidebar__items
+		img
+			width: 75px
+			height: 113px
+			flex-shrink: 0
+	.carts__wrapper
+		flex-direction: column
+	.carts__left
+		width: 100%
+	.carts h1
+		font-size: 24px
+	.carts
+		margin-top: 120px
+		&__wrapper
+			padding: 0 4vw
+		&__name
+			margin-left: 0
+		&__right
+			width: 100%
+	.contacts .container
+		flex-direction: column
+	.contacts__left, .contacts__right
+		width: 100%
+	.contacts__right
+		margin-top: 0
+	.contacts__left .tel
+		font-size: 34px
+	.megamenu__col
+		padding-top: 40px
+	.catalog-items .new-items__selectors
+		overflow: visible
+	.plate-fade
+		width: 100%
+	.catalog-items
+		overflow: hidden
+	.megamenu
+		padding-top: 0
+@media screen and ( min-width: 981px) and ( max-width: 1280px)
+	.carts__left
+		width: 600px
+	.carts__wrapper
+		padding: 0 20px
+		gap: 40px
+	.carts__right
+		right: 20px
+		width: 350px
+	.carts__name
+		margin-left: 0
+	.carts__total
+		width: 100%
+	.live__wrapper
+		gap: 50px
+	.live .live-btn
+		width: 100%
+	.live__col2
+		img
+			width: 100%
+	.tech__title
+		font-size: 64px
+	.tech__right
+		margin-left: 50%
+	.tech__left
+		width: 45%
+	.contacts__left .tel
+		font-size: 44px
+	.live-container__col:nth-child(odd) a:last-child
+		width: 50%
+	.live-container__col:nth-child(odd) a:first-child
+		width: 50%
+	.live-container__col:nth-child(even) a:last-child
+		width: 50%
+	.live-container__col:nth-child(even) a:first-child
+		width: 50%
+	.product
+		gap: 50px
+	.similar
+		.new-items__tab
+			display: grid
+			grid-template-columns: repeat(2, 1fr)
+			grid-gap: 20px 10px
+		.new-items__item
+			width: 100%
+	.catalog-items
+		.new-items__selectors
+			flex-wrap: wrap
+			.swiper-wrapper
+				width: 100%
+				margin: 0
+				margin-bottom: 20px
+				order: 1
+			.filters
+				order: 2
+			.sort
+				order: 3
+	.catalog-items .new-items__tab
+		grid-template-columns: repeat(2, 1fr)
+
+@media screen and ( min-width: 1281px) and ( max-width: 1587px)
+	.live__wrapper
+		gap: 50px
+	.live .live-btn
+		width: 308px
+	.tech__title
+		font-size: 64px
+	.tech__right
+		margin-left: 50%
+	.tech__left
+		width: 45%
