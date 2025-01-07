@@ -688,6 +688,7 @@ section {
 }
 .tech .js-img-94 {
   position: absolute;
+  width: 100%;
 }
 .tech__right {
   margin-left: 40%;
@@ -2673,6 +2674,14 @@ section {
 
 .irs-handle.from, .irs-handle.to {
   cursor: pointer;
+}
+
+.js-img-94 {
+  display: none;
+}
+
+.js-img-94.active {
+  display: block;
 }
 
 @media screen and (max-width: 980px) {

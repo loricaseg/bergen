@@ -168,7 +168,9 @@ $('.tech__item').on('mouseenter', function () {
 	$('.tech__item').not(this).find('.tech__text').slideUp(250)
 	$('.tech__item').not(this).removeClass('active')
 	$(this).find('.tech__text').slideDown(250)
-	$(this).addClass('active')
+	$(this).addClass('active');
+	$('.js-img-94').removeClass('active');
+	$($(this).attr('data-id')).addClass('active');
 })
 
 var trigger1 = gsap.timeline({
