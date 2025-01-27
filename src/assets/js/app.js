@@ -359,14 +359,30 @@ $('.menu-search').click(function (e) {
 	$('body').addClass('overflow-body')
 })
 
-$('.megamenu__col1 a').on('mouseover', function () {
-	$('.megamenu__col2').hide();
-	$($(this).attr('data-cat')).show()
-})
-$('.megamenu__col2 a').on('mouseover', function () {
-	$('.megamenu__col4').hide();
-	$($(this).attr('data-item')).show()
-})
+
+// ПРАВКИ *****
+if ($(window).width() > 980) {
+	$('.megamenu__col1 a').on('mouseover', function () {
+		$('.megamenu__col2').hide();
+		$($(this).attr('data-cat')).show()
+	})
+	$('.megamenu__col2 a').on('mouseover', function () {
+		$('.megamenu__col4').hide();
+		$($(this).attr('data-item')).show()
+	})
+} else {
+	$('.megamenu__col1 a').on('click', function (e) {
+		e.preventDefault();
+		$('.megamenu__col2').hide();
+		$($(this).attr('data-cat')).show()
+	})
+	$('.megamenu__col2 a').on('click', function () {
+		e.preventDefault();
+		$('.megamenu__col4').hide();
+		$($(this).attr('data-item')).show()
+	})
+}
+// ********
 
 $('.plate-trigger-inner').click(function () {
 	$(this).siblings('.plate-fade').toggle(100);
