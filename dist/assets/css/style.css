@@ -2840,7 +2840,7 @@ section {
   .tech-mob__item:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .tech-mob__item video {
+  .tech-mob__item video, .tech-mob__item img {
     object-fit: cover;
     height: 223px;
     width: 100%;
