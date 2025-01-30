@@ -1516,9 +1516,10 @@ section {
   width: 50%;
 }
 .product__left img, .product__left video {
-  height: 130vh;
+  height: 100%;
   object-fit: cover;
   width: 100%;
+  margin-bottom: -4px;
   border-bottom: 1px solid #fff;
 }
 .product__right {
