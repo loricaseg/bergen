@@ -411,3 +411,11 @@ jQuery(function ($) {
 		}
 	});
 });
+
+$('.new-items__img').mouseenter(function () {
+	$(this).find('video.img-hover').get(0).play()
+})
+$('.new-items__img').mouseleave(function () {
+	$(this).find('video.img-hover').get(0).pause();
+	$(this).find('video.img-hover').get(0).currentTime = 0;
+})
