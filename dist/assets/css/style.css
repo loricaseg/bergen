@@ -1058,6 +1058,7 @@ section {
   width: 100%;
   background-position: center center;
   margin-top: 70px;
+  margin-bottom: -70px;
 }
 .catalog-header span {
   display: block;
@@ -1080,6 +1081,9 @@ section {
   color: #fff;
 }
 
+.catalog-items {
+  margin-top: 170px;
+}
 .catalog-items .new-items__selectors {
   align-items: center;
   width: auto;
@@ -3224,6 +3228,10 @@ section {
 
   .swiper-container-header .swiper-slide:nth-child(1) {
     display: block;
+  }
+
+  .catalog-items {
+    margin-top: 140px;
   }
 }
 @media screen and (min-width: 981px) and (max-width: 1280px) {
