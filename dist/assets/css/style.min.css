@@ -2700,6 +2700,15 @@ section {
   color: #fff;
 }
 
+.swiper-container-header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-container-header .swiper-slide:nth-child(1) {
+  display: none;
+}
+
 @media screen and (max-width: 980px) {
   .menu__left a {
     display: none;
@@ -3211,6 +3220,10 @@ section {
 
   .megamenu {
     padding-top: 0;
+  }
+
+  .swiper-container-header .swiper-slide:nth-child(1) {
+    display: block;
   }
 }
 @media screen and (min-width: 981px) and (max-width: 1280px) {
