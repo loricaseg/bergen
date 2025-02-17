@@ -1,0 +1,115 @@
+@@include('partials/head2.html', {
+"title": "Главная"
+})
+
+<section class="carts">
+
+	<h1 class="carts__title">Оформление заказа</h1>
+	<div class="cart__steps">
+
+	</div>
+	<form class="carts__wrapper row">
+		<div class="carts__left">
+			<div class="carts__col">
+				<div class="carts__name row">
+					<span>01</span>
+					<p>Товары в корзине</p>
+				</div>
+				<div class="cart__items">
+					<div class="cart__items__link row">
+						<a href="" class="cart__items__img">
+							<img src="assets/img/item1.png" alt="">
+						</a>
+
+						<div class="cart__items__center">
+							<a href="" class="cart__items__title">
+								Название товара
+							</a>
+							<div class="cart__items__price">
+								123 руб
+							</div>
+							<a href="" class="cart__items__remove">
+								Удалить
+							</a>
+						</div>
+						<label class="cart__items__count">
+							<input type="number" value="1" min="0">
+						</label>
+						<div class="cart__items__total">
+							346 руб
+						</div>
+					</div>
+					<div class="cart__items__link row">
+						<a href="" class="cart__items__img">
+							<img src="assets/img/item2.png" alt="">
+						</a>
+
+						<div class="cart__items__center">
+							<a href="" class="cart__items__title">
+								Название товара Название товара Название товара Название товара
+							</a>
+							<div class="cart__items__price">
+								123 руб
+							</div>
+							<a href="" class="cart__items__remove">
+								Удалить
+							</a>
+						</div>
+						<label class="cart__items__count">
+							<input type="number" value="1" min="0">
+						</label>
+						<div class="cart__items__total">
+							346 руб
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="carts__right">
+			<div class="carts__total">
+				<div class="carts__total__title">
+					Сумма заказа
+				</div>
+				<label class="promo">
+					<input type="text" placeholder="Ввести промокод">
+					<button>
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="12" cy="12" r="10" fill="black" />
+							<path d="M8 12H16" stroke="white" />
+							<path d="M13 9L16 12L13 15" stroke="white" />
+						</svg>
+					</button>
+				</label>
+				<div class="carts__total__row">
+					<span>2 товара</span>
+					<span>115 800 ₽</span>
+				</div>
+				<div class="carts__total__row">
+					<span>Доставка</span>
+					<span>115 800 ₽</span>
+				</div>
+				<div class="carts__total__row">
+					<span>Скидка</span>
+					<span>115 800 ₽</span>
+				</div>
+				<div class="carts__total__row">
+					<span>Промокод</span>
+					<span>115 800 ₽</span>
+				</div>
+				<div class="carts__total__bottom">
+					<div class="carts__total__price row">
+						<span>Итого</span>
+						<span>64 700 ₽</span>
+					</div>
+					<a href="" class="total-btn">
+						перейти к оформлению
+					</a>
+				</div>
+			</div>
+		</div>
+	</form>
+
+</section>
+
+@@include('partials/footer.html', {})

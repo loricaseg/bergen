@@ -9,11 +9,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 input, textarea, a, button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1327,6 +1322,7 @@ section {
 
 .article {
   overflow: hidden;
+  margin-top: 100px;
 }
 .article h2 {
   font-size: 32px;
@@ -2713,6 +2709,61 @@ section {
   display: none;
 }
 
+.cart__items__img {
+  width: 70px;
+  height: 100px;
+  margin-right: 25px;
+}
+.cart__items__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cart__items__center {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cart__items__total {
+  margin-left: auto;
+}
+.cart__items__count {
+  opacity: 0.5;
+  width: 50px;
+  display: block;
+  height: fit-content;
+}
+.cart__items__count input {
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  width: 100%;
+}
+.cart__items__remove {
+  opacity: 0.6;
+  width: fit-content;
+  font-size: 14px;
+}
+.cart__items__remove:hover {
+  opacity: 1;
+}
+.cart__items__title {
+  font-size: 14px;
+  max-width: 350px;
+}
+.cart__items__title:hover {
+  opacity: 0.6;
+}
+.cart__items__link {
+  padding: 25px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  gap: 10px;
+}
+.cart__items__link:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 980px) {
   .menu__left a {
     display: none;
@@ -3353,5 +3404,34 @@ section {
 
   .tech__left {
     width: 45%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .cart__items__link {
+    display: block;
+    height: 300px;
+    position: relative;
+  }
+
+  .cart__items__count, .cart__items__total {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .cart__items__img {
+    width: 167px;
+    max-width: 220px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+  }
+
+  .cart__items__center {
+    width: 100%;
+  }
+
+  .cart__items__count, .cart__items__total, .cart__items__center {
+    padding-left: 187px;
   }
 }
